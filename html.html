@@ -1,9 +1,280 @@
 <div class="page-content">
-    <h1>HTML</h1>
-    <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web.</p>
-    <ul>
-        <li>Estructura básica</li>
-        <li>Elementos HTML</li>
-        <li>Atributos</li>
-    </ul>
+    <div class="container">
+        <nav id="menu-lateral">
+            <h2 id="menu-lateral-titulo">HTML</h2> <!-- Título del menú lateral -->
+            <ul>
+                <li><a href="#Introduccion">Introducción a HTML</a></li>
+                <li><a href="#parte1">Etiquetas HTML</a></li>
+                <li><a href="#parte2">Estructura básica de una página web</a></li>
+                <li><a href="#mas-info">Más info</a></li>
+                <li><a href="#autoevaluacion">Autoevaluación</a></li>
+            </ul>
+        </nav>
+    <div id="contenido">
+        <section id="Introduccion">
+            <h3>Introducción a HTML</h3>
+            <p>HTML (Hypertext Markup Language) es un lenguaje de marcado utilizado para crear
+                páginas web. Te proporciona la estructura básica y el contenido de una página web,
+                permitiéndote organizar y presentar información de manera jerárquica y semántica.</p>
+            <img src="images\css1.png" alt="Imagen que describe la diferencia entre HTML (el esqueleto de un humano) y css (la piel)">
+        </section>
+        <section id="parte1">
+            <h3>Etiquetas HTML</h3>
+            <p>En HTML, una etiqueta es una pieza fundamental que se utiliza para marcar o etiquetar
+                diferentes partes de un documento. Cada etiqueta tiene un propósito específico y define
+                cómo se debe mostrar o interpretar el contenido que rodea.
+                Existen dos tipos principales de etiquetas en HTML:
+                <ul> 
+                    <li><b>Etiquetas con Apertura y Cierre:</b>
+                    </li>
+                    <li>
+                        
+                        <img src="images\html1.png" alt="&lt;elemento atributo=&quot;valor&quot;&gt;Contenido&lt;/elemento&gt;">	
+                    </li>
+                    <li>Tienen una etiqueta de apertura y otra de cierre y definen un bloque de contenido.
+                        Por ejemplo: 
+                    </li>
+                    <li>
+                        <img src="images\html2.png" alt=alt="&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;">
+                    </li>
+                    <li><b>Etiquetas de Auto-cierre:</b> 
+                    </li>
+                    <li>
+                        <img src="images\html3.png" alt=alt="&lt;elemento atributo=&quot;valor&quot;&gt;Contenido&lt;/elemento&gt;"
+>	
+                    </li>
+                    <li>Son etiquetas que no tienen una etiqueta de cierre correspondiente. Se utilizan
+                        para elementos que no contienen contenido, como imágenes o saltos de línea.
+                        Por ejemplo:
+                    </li>
+                    <li>
+                        <img src="images\html4.png" alt="&lt;img src=&quot;imagen.jpg&quot; alt=&quot;Descripcion&quot;&gt;">
+                    </li>	
+                </ul>
+            </p>
+            <p> Las etiquetas también pueden tener <b>atributos</b>, que proporcionan información adicional sobre el elemento. Los atributos se colocan dentro de la etiqueta de apertura y se
+                    utilizan para configurar propiedades específicas del elemento. En el siguiente ejemplo:
+                    <br>
+                <img src="images\html5.png" alt=alt="&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;">	
+                <ul>
+                    <li><b> < a > :</b>  es la etiqueta de enlace.
+                    </li>
+                    <li><b>href:</b> es un atributo que especifica el destino del enlace.
+                    </li>
+                </ul>
+            </p>	
+            <p> También es importante saber que las etiquetas pueden anidarse, lo que significa que
+                puedes colocar una etiqueta dentro de otra. En este caso, la etiqueta interna debe ce-
+                rrarse antes de la etiqueta externa
+                <br>
+                <img src="images\html6.png" alt="&lt;head&gt; &lt;title&gt;Título de la página&lt;/title&gt; &lt;meta name=&quot;author&quot; content=&quot;Sergio Santamaría&quot;&gt; &lt;/head&gt;"
+>	
+                <br>
+                En este caso vemos que la etiqueta head tiene como contenido a otra etiqueta title, por
+                lo que:
+                <ul>
+                    <li>La etiqueta head es el padre de la etiqueta title y meta.
+                    </li>
+                    <li>La etiqueta title y meta son hijas de la etiqueta head.
+                    </li>
+                    <li>La etiqueta title y meta son hermanas.
+                    </li>
+                </ul>
+                Si nos fijamos, además, la etiqueta anidada (title) está en una nueva línea y con un nivel
+                de indentación/sangrado mayor. Esto es así por una convención mundial a la que se
+                ha llegado para que los programadores escribamos código de una manera similar, tanto
+                para hacernos más fácil y comprensible el código cuando este crezca, como para cuando
+                tengamos que compartirlo con otros programadores
+            </p>	
+            
+        
+        </section> 
+        <!-- Contenido Parte 2 -->
+        <section id="parte2">
+            <h3>Estructura básica de una página web</h3>
+            <p>Una página HTML sigue una estructura estándar que incluye varios elementos esencia-
+                les para definir el contenido y la configuración de la página.</p>
+                <br>
+            <img src="images\html7.png" alt="&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Titulo de la Pagina&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Contenido de la pagina va aqui --&gt; &lt;/body&gt; &lt;/html&gt;">
+            <p>A continuación explicamos la función que cumple cada etiqueta:
+                <ul> 
+                    <li><b> < !DOCTYPE html>: </b>	Esta es la primera línea de cualquier documento HTML. In-
+                            dica al navegador qué versión de HTML se está utilizando. En este caso, HTML es
+                            la versión 5, que es la más utilizada en la actualidad.
+                    </li>
+                    <li><b> < html>:</b>Es el elemento raíz de un documento HTML. Contiene todo el contenido
+                            de la página web. Todas las etiquetas deben estar incluidas dentro.
+                    </li>
+                    <li><b>< head>:</b> Proporciona información sobre el documento, pero no contiene conte-
+                            nido visible en la página. En su lugar, contiene metadatos, enlaces a archivos ex-
+                            ternos (como CSS), enlaces a fuentes, y otros elementos que no se muestran di-
+                            rectamente en la página.
+                    </li>
+                    <li><b>< meta charset=ÜTF-8>:</b> Especifica el conjunto de caracteres (UTF-8) que se uti-
+                            lizará para interpretar el contenido. Esto asegura que los caracteres especiales y
+                            acentos se muestren correctamente.	
+                    </li>
+                    <li><b>< title>:</b>Define el título de la página que se muestra en la pestaña del navegador
+                    </li>
+                    <li><b>< body>:</b> Es donde se coloca todo el contenido visible de la página web, como tex-
+                            to, imágenes, enlaces y otros elementos.
+                    </li>
+                    <li><b>Comentarios:</b>Los comentarios en HTML se escriben así:
+                    <br>
+                        <img src="images\html8.png" alt="DevWeb">
+                        <br>
+                        Los comentarios son útiles para agregar notas o aclaraciones en el código sin afec-
+                        tar la visualización de la página.
+                    </li>	
+                </ul>
+            </p>
+            
+            <h3>Ejemplo Completo</h3>
+                <br>
+            <img src="images\html9.png" alt="&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Mi Primera Página&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Hola Mundo!&lt;/h1&gt; &lt;p&gt;Esta es mi primera página web.&lt;/p&gt; &lt;img src=&quot;imagen.jpg&quot; alt=&quot;Descripcion&quot;&gt; &lt;/body&gt; &lt;/html&gt;">
+            <br>
+            <img src="images\html10.png" alt="&lt;!DOCTYPE html&gt; &lt;html lang=&quot;es&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;title&gt;Tienda de Ropa&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Encabezado Principal --&gt; &lt;h1&gt;Bienvenido a la Tienda de Ropa&lt;/h1&gt; &lt;!-- Descripcion del Producto --&gt; &lt;h2&gt;Air Force&lt;/h2&gt; &lt;!-- Imagen del Producto --&gt; &lt;img src=&quot;zapatillas.png&quot; alt=&quot;Zapatillas&quot;&gt; &lt;!-- Precio del Producto --&gt; &lt;p&gt;Precio: $150&lt;/p&gt; &lt;!-- Enlace de Compra --&gt; &lt;a href=&quot;https://www.nike.com/es/&quot;&gt;Comprar&lt;/a&gt; &lt;/body&gt; &lt;/html&gt;">
+                <br>
+            <h3>Etiquetas Básicas</h3>
+                <br>
+            <img src="images\html11.png" alt="&lt;!DOCTYPE html&gt; &lt;html lang=&quot;es&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;title&gt;Tienda de Ropa&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Encabezado Principal --&gt; &lt;h1&gt;Bienvenido a la Tienda de Ropa&lt;/h1&gt; &lt;!-- Descripción del Producto --&gt; &lt;h2&gt;Air Force&lt;/h2&gt; &lt;!-- Contenedor del Producto --&gt; &lt;div class=&quot;producto&quot;&gt; &lt;!-- Imagen del Producto --&gt; &lt;img src=&quot;zapatillas.png&quot; alt=&quot;zapatillas&quot;&gt; &lt;!-- Detalles del Producto --&gt; &lt;div class=&quot;detalles&quot;&gt; &lt;!-- Precio del Producto --&gt; &lt;span class=&quot;precio&quot;&gt;$150&lt;/span&gt; &lt;!-- Descripción del Producto --&gt; &lt;p&gt;Zapatillas modelo Air Force blancas.&lt;/p&gt; &lt;/div&gt; &lt;!-- Enlace de Compra --&gt;">
+                <br>
+            <p> En este código hemos introducido nuevas etiquetas, vamos a explicar que función tiene
+                cada una:
+                <ul>
+                    <li><b>h1:</b>	Dene el encabezado principal de la página, que es el título de la tienda.
+                    </li>
+                    <li><b>h2:</b>Es el título del producto, en este caso, Air Force.
+                    </li>
+                    <li><b>img:</b> Muestra la imagen del producto. El atributo “src” especica la ubicación de
+                            la imagen, mientras que “alt” proporciona un texto descriptivo en caso de que la
+                            imagen no se cargue o para los lectores de pantalla para las personas con disca-
+                            pacidad visual.
+                    </li>
+                    <li><b>p:</b> Representa un párrafo. En este caso lo utilizamos para mostrar el precio o in-
+                            formación del producto.
+                    </li>
+                    <li><b>a:</b>Crea un enlace para comprar el producto. El atributo <b>“href”</b> especifica la direc-
+                            ción a la que se enlaza.
+                    </li>
+                </ul>
+                Cada etiqueta tiene un propósito específico. Juntas, crean la estructura y el contenido
+                de la página web de la tienda de ropa. Puedes copiar y pegar este código en un archivo
+                HTML y abrirlo en tu navegador para ver cómo se visualiza.
+                Vamos a continuar completando el código introduciendo nuevas etiquetas:
+                <br>
+            <img src="images\html12.png" alt="&lt;!DOCTYPE html&gt; &lt;html lang=&quot;es&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;title&gt;Tienda de Ropa&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Encabezado Principal --&gt; &lt;h1&gt;Bienvenido a la Tienda de Ropa&lt;/h1&gt; &lt;!-- Descripción del Producto --&gt; &lt;h2&gt;Air Force&lt;/h2&gt; &lt;!-- Contenedor del Producto --&gt; &lt;div class=&quot;producto&quot;&gt; &lt;!-- Imagen del Producto --&gt; &lt;img src=&quot;zapatillas.png&quot; alt=&quot;zapatillas&quot;&gt; &lt;!-- Detalles del Producto --&gt; &lt;div class=&quot;detalles&quot;&gt; &lt;!-- Precio del Producto --&gt; &lt;span class=&quot;precio&quot;&gt;$150&lt;/span&gt; &lt;!-- Descripción del Producto --&gt; &lt;p&gt;Zapatillas modelo Air Force blancas.&lt;/p&gt; &lt;/div&gt; &lt;!-- Enlace de Compra --&gt;
+">
+                <br>
+            <img src="images\html13.png" alt="&lt;!DOCTYPE html&gt; &lt;html lang=&quot;es&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; &lt;title&gt;Tienda de Ropa&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Encabezado Principal --&gt; &lt;h1&gt;Bienvenido a la Tienda de Ropa&lt;/h1&gt; &lt;!-- Descripción del Producto --&gt; &lt;h2&gt;Air Force&lt;/h2&gt; &lt;!-- Contenedor del Producto --&gt; &lt;div class=&quot;producto&quot;&gt; &lt;!-- Imagen del Producto --&gt; &lt;img src=&quot;zapatillas.png&quot; alt=&quot;zapatillas&quot;&gt; &lt;!-- Detalles del Producto --&gt; &lt;div class=&quot;detalles&quot;&gt; &lt;!-- Precio del Producto --&gt; &lt;span class=&quot;precio&quot;&gt;$150&lt;/span&gt; &lt;!-- Descripción del Producto --&gt; &lt;p&gt;Zapatillas modelo Air Force blancas.&lt;/p&gt; &lt;/div&gt; &lt;!-- Enlace de Compra --&gt;
+">
+                <ul>
+                    <li><b>div:</b> Es un contenedor genérico que se utiliza para agrupar y organizar otros ele-
+                            mentos. En este caso, se utiliza para agrupar la imagen, detalles y enlace de com-
+                            pra del producto.
+                    </li>
+                    <li><b>span:</b> Similar a < div>, pero para elementos de una línea. En este caso, se utiliza
+                            para resaltar el precio del producto.
+                    </li>
+                    <li><b>ul y li:</b>Se utilizan para crear una lista desordenada de características del producto.
+                            < ul>define la lista, y < li>representa cada elemento de la lista.
+                    </li>
+                </ul>
+            </p>	
+        </section>		
+
+        
+
+        <!-- Contenido Más Info -->
+        <section id="mas-info">
+            <h3>Más información</h3>
+            <p>Aquí puedes encontrar más contenido adicional, enlaces, referencias...</p>
+            <!-- Enlaces a pestaña nueva -->
+            <ul> 
+                <li><a href="https://lenguajehtml.com/html/" target="_blank">HTML5 Tutoriales</a></li>
+                <li><a href="https://www.manualweb.net/html5/" target="_blank">Manual HTML5</a></li>
+            </ul>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=WSFT4OQF_mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <iframe src="https://isawnavarro.com/wp-content/uploads/2019/01/manual-Html5-css.pdf" width="600" height="400"></iframe>
+        </section>
+        
+        <!-- Contenido Autoevaluación -->
+        <section id="autoevaluacion">
+            <h3>Autoevaluación</h3>
+            <p>Contesta a las siguientes preguntas:</p>
+            <form>
+                <div class="pregunta" data-respuesta-correcta="si" data-comprobada="false">
+                    <p>¿HTML es un lenguaje de marcado para crear y estructurar contenido en la web?</p>
+                    <select name="pregunta1">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="c) <li>" data-comprobada="false">
+                    <fieldset>
+                        <legend><p>¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desordenada?</p></legend>
+                        <input type="radio" id="position" name="listProperty" value="a) <ul>">
+                        <label for="position">A) < ul></label><br>
+
+                        <input type="radio" id="image" name="listProperty" value="b) <ol>">
+                        <label for="image">B) < ol></label><br>
+
+                        <input type="radio" id="type" name="listProperty" value="c) <li>">
+                        <label for="type">C) < li></label><br>
+
+                        <input type="radio" id="decoration" name="listProperty" value="d) <div>">
+                        <label for="decoration">D) < div></label><br>
+                    </fieldset>
+
+                    <button type="button" onclick="comprobarRespuestaRadioButton(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="header, article" data-comprobada="false">
+                    <fieldset>
+                    <legend><p>¿Cuáles de las siguientes etiquetas HTML se consideran etiquetas semánticas?</p></legend>
+                    <input type="checkbox" id="div" name="afirmaciones" value="div">
+                    <label for="div">A) < div></label><br>
+
+                    <input type="checkbox" id="span" name="afirmaciones" value="span">
+                    <label for="span">B) < span></label><br>
+
+                    <input type="checkbox" id="header"  name="afirmaciones" value="header">
+                    <label for="header">C) < header></label><br>
+
+                    <input type="checkbox" id="article" name="afirmaciones" value="article">
+                    <label for="article">D) < article></label><br>
+                    </fieldset>
+
+                    <button type="button" onclick="comprobarRespuestaCheckBox(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="form" data-comprobada="false">
+                    <p>Selecciona todos los elementos HTML que se utilizan para crear formularios.</p>
+                    <select id="afirmacionesCSS" name="afirmaciones" multiple size="4">
+                        <option value="form">A) < form></option>
+                        <option value="input">B) < input></option>
+                        <option value="select">C) < select></option>
+                        <option value="table">D) < table></option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="<html>" data-comprobada="false">
+                    <p><label for="respuestaPropiedadCSS">¿Cuál es la etiqueta básica para iniciar un documento HTML?</label></p>
+                    <input type="text" id="respuestaPropiedadCSS" name="respuesta" placeholder="Introduce la etiqueta HTML aquí">
+                    <button type="button" onclick="comprobarRespuestaTexto(this)">Comprobar</button>
+                </div>	
+                
+                <p id="totalAciertos">Total de aciertos: 0</p>
+
+            </form>				
+        </section>
+
+
+        
+    </div>
 </div>
