@@ -74,7 +74,7 @@ main {
 
 
 /* Menú */
-nav ul {
+#menu nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -84,12 +84,12 @@ nav ul {
     overflow: hidden;
 }
 
-nav ul li {
+#menu nav ul li {
     margin: 0;
     position: relative;
 }
 
-nav ul li a {
+#menu nav ul li a {
     color: var(--clr-text);/*Color text menu header*/
     text-decoration: none;
     font-weight: bold;
@@ -98,12 +98,12 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
+#menu nav ul li a:hover {
     background: #00b4d8;
     color: white;
 }
 
-nav ul li ul.submenu {
+#menu nav ul li ul.submenu {
     display: none;
     position: absolute;
     background: white;
@@ -118,18 +118,18 @@ nav ul li ul.submenu {
     z-index: 10;
 }
 
-nav ul li:hover ul.submenu {
+#menu nav ul li:hover ul.submenu {
     display: block;
 }
 
-nav ul li ul.submenu li a {
+#menu nav ul li ul.submenu li a {
     padding: 0.5rem 1rem;
     color: #ebe6eo;
     background: white;
     transition: all 0.3s ease;
 }
 
-nav ul li ul.submenu li a:hover {
+#menu nav ul li ul.submenu li a:hover {
     background: #00b4d8;
     color: white;
 }
