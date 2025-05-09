@@ -3,123 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APRENDE DESARROLLO WEB</title>
+    <title>Portal Web Educativo</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo">APRENDE DESARROLLO WEB</div>
-        <nav>
-            <ul class="menu">
-                <li class="menu__item menu__item--ini">
-                    <a href="#" onclick="showSection('inicio')">Inicio</a>
-                </li>
-                <li class="menu__item menu__item--met">
-                    <a href="#" onclick="showSection('metodologia')">Metodología</a>  
-                </li>
-                <li class="menu__item menu__item--html">
-                    <a href="#" onclick="showSection('html')">HTML</a>
-                </li>
-                <li class="menu__item menu__item--js">
-                    <a href="#" onclick="showSection('javascript')">JavaScript</a>
-                </li>
-                <li class="menu__item menu__item--css">
-                    <a href="#" onclick="showSection('css')">CSS</a>
-                </li>
-                <li class="menu__item menu__item--usabilidad">
-                    <a href="#" onclick="showSection('usabilidad')">Usabilidad</a>
-                </li>
-                <li class="menu__item menu__item--autoevaluacion">
-                    <a href="#" onclick="showSection('autoevaluacion')">Autoevaluación</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
+    <div id="content"></div>
+    <div id="footer"></div>
 
-    <main>
-        <section id="inicio" class="section">
-			<div style="display: flex; align-items: center; justify-content: space-between;">
-                <div style="flex: 1; padding-right: 0rem; padding: 20px">
-                    <h1>APRENDE DESARROLLO WEB</h1>
-                    <p>¡Aprende a crear páginas web desde cero! Únete a nuestro curso de desarrollo web y domina las herramientas más modernas. Adquiere habilidades en HTML, CSS, JavaScript y más. ¡Empieza ahora y lleva tus proyectos al siguiente nivel!</p>
-                </div>
-                <div style="flex: 1; text-align: center;">
-                    <img src="img/planta.png" alt="Planta decorativa" style="max-width: 100%; height: 300px; border-radius: 0px;">
-                </div>
-            </div>
-        </section>
+    <script>
+        // Cargar header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
 
-        <section id="metodologia" class="section hidden">
-            <h2>Aula Invertida</h2>
-            <p>El aula invertida es un enfoque pedagógico en el que los estudiantes revisan el contenido teórico en casa y utilizan el tiempo de clase para actividades prácticas y colaborativas.</p>
-            <h2>Puzzle de Aronson</h2>
-            <p>El puzzle de Aronson es una técnica de aprendizaje cooperativo en la que los estudiantes trabajan en grupos para aprender y enseñar diferentes partes de un tema.</p>
-        </section>
+        // Cargar footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
 
-        <section id="html" class="section hidden">
-            <h2>APRENDE HTML</h2>
-			<div id="Panes"><div>
-				<h2>¿Qué es Lorem Ipsum?</h2>
-				<p><strong>Lorem Ipsum</strong> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus  PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-				</div><div>
-				<h2>¿Por qué lo usamos?</h2>
-				<p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
-				</div><br><div>
-				<h2>¿De dónde viene?</h2>
-				<p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32</p><p>El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
-			</div>
-        </section>
+        // Cargar contenido inicial (inicio.html)
+        window.onload = function() {
+            loadContent('inicio.html');
+        };
 
-        <section id="css" class="section hidden">
-            <h2>APRENDE CSS</h2>
-        </section>
-
-        <section id="javascript" class="section hidden">
-            <h2>APRENDE JavaScript</h2>
-        </section>
-
-        <section id="usabilidad" class="section hidden">
-            <h2>APRENDE UX</h2>
-        </section>
-
-        <section id="autoevaluacion" class="section hidden">
-            <h2>Autoevaluación</h2>
-        </section>
-    </main>
-
-    <footer>
-            <div class="footer-section" style="background-color: #FFA07A;">
-                <h3>Cómo vamos a aprender</h3>
-                <p>Durante este curso usaremos las siguientes metodologías para nuestro aprendizaje:</p>
-                <ul>
-                    <li><a href="#" onclick="showSection('metodologia')">Aula Invertida</a></li>
-                    <li><a href="#" onclick="showSection('metodologia')">Puzzle de Aronson</a></li>
-                </ul>
-            </div>
-            <div class="footer-section" style="background-color: #87CEFA;">
-                <h3>Aprende a construirla</h3>
-                <p>Siguiendo estas metodologías construiremos nuestra página web mediante:</p>
-                <ul>
-                    <li><a href="#" onclick="showSection('html')">HTML</a></li>
-                    <li><a href="#" onclick="showSection('javascript')">JavaScript</a></li>
-                </ul>
-            </div>
-            <div class="footer-section" style="background-color: #FFB6C1;">
-                <h3>Mejora sus funciones</h3>
-                <p>Una vez creada nuestra web es el momento de mejorar sus funciones:</p>
-                <ul>
-                    <li><a href="#" onclick="showSection('css')">CSS</a></li>
-                    <li><a href="#" onclick="showSection('usabilidad')">Usabilidad</a></li>
-                </ul>
-            </div>
-            <div class="footer-section" style="background-color: #98FB98;">
-                <h3>Cuánto has aprendido</h3>
-                <p>Para finalizar es el momento de evaluar lo que hemos aprendido en este curso:</p>
-                <ul>
-                    <li><a href="#" onclick="showSection('autoevaluacion')">Autoevaluación</a></li>
-                </ul>
-            </div>
-    </footer>
+        // Función para cargar contenido
+        function loadContent(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                });
+        }
+    </script>
 </body>
 </html>
