@@ -238,7 +238,15 @@ footer a:hover {
     justify-content: center;
     width: 100%;
 }
+#menu-superior li {
+    margin: 0 10px;
+}
 
+#menu-superior a {
+    text-decoration: none;
+	color: #F0F0F0;
+	font-size: 26px;
+}
 
 #menu-lateral-titulo {
     background-color: #86AADF;
