@@ -1,9 +1,445 @@
 <div class="page-content">
-    <h1>CSS</h1>
-    <p>CSS (Cascading Style Sheets) es el lenguaje utilizado para estilizar páginas web.</p>
-    <ul>
-        <li>Selectores</li>
-        <li>Propiedades</li>
-        <li>Layouts</li>
-    </ul>
+    <div class="container">
+        <nav id="menu-lateral">
+            <h2 id="menu-lateral-titulo">CSS</h2> <!-- Título del menú lateral -->
+            <ul >
+                <li><a href="#parte1">Introducción a CSS</a></li>
+                <li><a href="#parte2">Enlazando CSS y HTML</a></li>
+                <li><a href="#parte3">Sintaxis de una Regla CSS</a></li>
+                <li><a href="#parte4">Selección de Elementos</a></li>
+                <li><a href="#parte5">Propiedades y Valores en CSS</a></li>
+                <li><a href="#parte6">Dando estilo con CSS</a></li>
+                <li><a href="#parte7">Cascada y Especificidad en CSS</a></li>
+                <li><a href="#parte8">Box Model en CSS</a></li>
+                <li><a href="#parte9">El Modelo FlexBox</a></li>
+                <li><a href="#parte10">Imágenes y Fondo en CSS</a></li>
+                <li><a href="#parte11">Tipografía y Colores en CSS</a></li>
+                <li><a href="#mas-info">Más información</a></li>
+                <li><a href="#autoevaluacion">Autoevaluación</a></li>
+            </ul>
+        </nav>
+    <div id="contenido">
+        <section id="parte1">
+            <h3>Introducción a CSS</h3>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo que se utiliza para controlar
+                la presentación y el diseño de un documento HTML. Permite definir cómo se ven los
+                elementos HTML en una página web, como el color, tamaño, tipo de fuente, márgenes,
+                espaciado y posición de los elementos. CSS trabaja en conjunto con HTML para definir
+                el aspecto y diseño de la página web. Se utiliza para controlar el color, la tipografía, el
+                espaciado y otros estilos visuales.</p>
+            <img src="images\css1.png" alt="DevWeb">
+        </section>      
+        <!-- Contenido Parte 2 -->
+        <section id="parte2">
+            <h3>Enlazando CSS y HTML</h3>
+            <p>Para incluir un archivo CSS en un documento HTML, se utiliza la etiqueta &lt;link&gt; en la sección &lt;head&gt; del documento HTML. Aquí temuestro cómo se hace:
+                <ul style="list-style-type:NUMBER"> 
+                    <li>Crea un archivo con extensión .css que contenga tus estilos. Por ejemplo, puedes nombrarlo styles.css.</li>
+                    <li>Guarda tu archivo CSS en la misma carpeta que tu documento HTML o en una carpeta separada, si lo prefieres. Anota la ruta del archivo CSS.</li>
+                    <li>Dentro del documento HTML, agrega la siguiente línea en la sección &lt;head&gt;</li>
+                </ul>
+            </p>
+            <img src="images\css2.png" alt="<link rel="stylesheet" href="ruta/del/archivo/styles.css>">
+            <p> 
+                <ul> 
+                    <li> <b>rel=“stylesheet”:</b> Indica que el enlace es para una hoja de estilos.</li>
+                    <li> <b>href=“ruta/del/archivo/styles.css”:</b> Especifica la ruta del archivo CSS que deseas incluir. </li>
+                </ul> 
+                Cuando el navegador carga la página HTML, también buscará y aplicará los estilos definidos en el archivo CSS especificado en el enlace.</p>
+        </section>		
+        <!-- Contenido Parte 3 -->
+        <section id="parte3">
+            <h3>Sintaxis de una Regla CSS</h3>
+            <p>Antes de profundizar en las propiedades y valores, es importante entender la estructura básica de una regla CSS:</p>
+            <img src="images\css3.png" alt="selector { propiedad:valor; }">
+            <p>
+                <ul> 
+                    <li><b>Selector:</b> Indica a qué elemento o conjunto de elementos se aplica la regla.</li>
+                    <li><b>Propiedad:</b> Es la característica que queremos modificar.</li>
+                    <li><b>Valor:</b> Es la opción que asignamos a la propiedad.</li>
+                </ul>
+            </p>
+        </section>
+        <!-- Contenido Parte 4 -->
+        <section id="parte4">
+            <h3>Selección de Elementos </h3>
+            <p>En CSS, la selección de elementos es una parte esencial para aplicar estilos a elementos
+            específicos en una página web. Existen varios tipos de selectores que permiten apuntar
+            a diferentes elementos HTML. Aquí temostraré algunos ejemplos:
+            </p>
+                <ul> 
+                    <li><b>Selección por Etiqueta:</b> Los selectores por etiqueta se utilizan para aplicar estilos
+                        a todos los elementos de un tipo específico. Por ejemplo, si queremos aplicar un
+                        estilo a todos los párrafos &lt; p &gt; en una página, podemos usar este selector.
+                    </li>
+                    <li>
+                        <img src="images\css4.png" alt="p { color: red; }">	
+                    </li>
+                    <li><b>Selectores por Clase:</b> Los selectores por clase permiten aplicar estilos a elementos
+                        que tienen un atributo class específico. Esto es útil cuando queremos aplicar un
+                        estilo a un grupo de elementos. 
+                    </li>
+                    <li>
+                        <img src="images\css5.png" alt=".precio { background-color: yellow; }">
+                    </li>
+                    <li><b>Selectores por ID:</b> Los selectores por ID se utilizan para aplicar estilos a un elemento
+                        específico que tiene un atributo id único.
+                    </li>
+                    <li>
+                        <img src="images\css6.png" alt="#encabezado { border: 2px solid red; }">	
+                    </li>
+                    <li><b>Combinación de Selectores:</b> También es posible combinar selectores para apuntar
+                        a elementos de manera más específica. Por ejemplo, si queremos aplicar un
+                        estilo a los párrafos dentro de un elemento con la clase contenedor, podemos hacer
+                        lo siguiente:
+                    </li>
+                    <li>
+                        <img src="images\css7.png" alt=".contenedor p { color: green; }">
+                    </li>
+                    <li><b>Pseudo-clases y Pseudo-elementos:</b> Las pseudo-clases y pseudo-elementos permiten
+                        aplicar estilos a elementos en estados específicos o partes específicas de
+                        un elemento. Algunos ejemplos incluyen <b>:hover</b> (cuando el cursor está sobre el
+                        elemento) y <b>:: before</b> (para agregar contenido antes de un elemento).<br>
+                    </li>
+                    <li>
+                        <img src="images\css8.png" alt="a:hover { background-color: lightblue; }">	
+                    </li>		
+                </ul>
+            <p>
+                La selección de elementos en CSS es crucial para aplicar estilos de manera precisa y
+            efectiva. Los diferentes tipos de selectores permiten dirigirse a elementos específicos o
+            grupos de elementos en una página web. En el siguiente punto, exploraremos propiedades
+            y valores comunes en CSS.
+            Se puede practicar a utilizar los diferentes tipos de selectores con CSS Diner, un juego
+            en línea.
+            </p>
+
+        </section>
+        <!-- Contenido Parte 5 -->
+        <section id="parte5">
+            <h3>Propiedades y Valores en CSS </h3>
+            <p>En CSS, las propiedades son los atributos que queremos modificar, como el color, el tamaño
+            o el margen de un elemento. Los valores son las opciones que podemos asignar a
+            esas propiedades. Cada propiedad tiene un conjunto de valores válidos que determinan
+            cómo se aplicará el estilo.</p>
+            <p>A continuación, te presento algunas propiedades comunes en CSS y sus posibles valores:</p>
+            <p>
+                <ul> 
+                    <li><b>Color (“color”):</b> Indica a qué elemento o conjunto de elementos se aplica la regla.</li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>Descripción:</b> Indica a qué elemento o conjunto de elementos se aplica la regla.Define el color del texto.</li>
+                            <li><b>Valores Posibles:</b> Nombres de colores, códigos hexadecimales, RGB, entre
+                                otros</li>
+                    <li>
+                            <img src="images\css9.png" alt="p { color: blue; } p { color: #ff6347; } p {">
+                    </li>
+                        </ul>
+
+                    <li><b>Fondo (“background”):</b> Es la característica que queremos modificar.</li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>Descripción:</b>Define el fondo de un elemento.</li>
+                            <li><b>Valores Posibles:</b>Color, imagen, posición, repetición, etc.</li>
+                    <li>
+                            <img src="images\css10.png" alt="div { background-color: #f2f2f2; } body { background-image: url("gradient_bg.png"); background-repat:repeat-x; }">
+                    </li>
+                        </ul>
+                    <li><b>Tamaño de la fuente (“font-size”):</b> Es la característica que queremos modificar.</li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>Descripción:</b>Define el fondo de un elemento.</li>
+                            <li><b>Valores Posibles:</b>Color, imagen, posición, repetición, etc.</li>
+                    <li>
+                            <img src="images\css11.png" alt="h1 { font-size:24px; }">
+                    </li>
+                        </ul>
+                    <li><b>Margen (“margin”):</b> Es la característica que queremos modificar.</li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>Descripción:</b>Define el fondo de un elemento.</li>
+                            <li><b>Valores Posibles:</b>Color, imagen, posición, repetición, etc.</li>
+                    <li>
+                            <img src="images\css12.png" alt="img { margin: 10px; } img { margin-botton: 10px; margin-top: 10px; } img { margin-left: 5%; margin-right: 5%; }">
+                    </li>
+                        </ul>
+                    <li><b>Borde (“border”):</b> Es la característica que queremos modificar.</li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>Descripción:</b>Define el fondo de un elemento.</li>
+                            <li><b>Valores Posibles:</b>Color, imagen, posición, repetición, etc.</li>
+                    <li>
+                            <img src="images\css13.png" alt="div { border: 1px solid #ccc; } div { border-color: red; border-width: 2px; border-style: dotted; }">
+                    </li>
+                        </ul>
+                    <li><b>Ancho y Alto (“width” y “height”):</b> Es la característica que queremos modificar.</li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>Descripción:</b>Define el fondo de un elemento.</li>
+                            <li><b>Valores Posibles:</b>Color, imagen, posición, repetición, etc.</li>
+                    <li>
+                            <img src="images\css14.png" alt="img { width: 10%; height: auto; }">							
+                    </li>	
+                        </ul>
+                </ul>
+            </p>
+            <p> Las propiedades y valores en CSS permiten controlar la apariencia y diseño de los elementos
+            HTML. Es importante familiarizarse con las propiedades comunes y sus posibles
+            valores para poder crear diseños atractivos y funcionales. En el próximo punto,
+            exploraremos la diferencia entre estilos en línea y estilos externos.
+            </p>
+        
+        </section>
+        <!-- Contenido Parte 6 -->
+        <section id="parte6">
+            <h3>Dando estilo con CSS </h3>
+            <p>Partiendo del ejemplo anterior, en el que hemos diseñado una página HTML de una
+            tienda de zapatillas, vamos a modificarlo para añadir clases a las secciones a las que
+            deseamos dar estilo.</p>
+            <img src="images\css15a.png" alt="&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Tienda de Ropa&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Encabezado Principal --&gt; &lt;h1 class=&quot;titulo-principal&quot;&gt;Bienvenido a la Tienda de Ropa&lt;/h1&gt; &lt;!-- Contenedor del Producto --&gt; &lt;div class=&quot;producto&quot;&gt; &lt;!-- Descripcion del Producto --&gt; &lt;h2&gt;Air Force&lt;/h2&gt; &lt;!-- Detalles del Producto --&gt; &lt;div class=&quot;detalles&quot;&gt; &lt;!-- Imagen del Producto --&gt; &lt;img src=&quot;zapatillas.png&quot; alt=&quot;Zapatillas&quot;&gt; &lt;!-- Precio del Producto --&gt; &lt;span class=&quot;precio&quot;&gt;$50&lt;/span&gt; &lt;!-- Descripcion del Producto --&gt; &lt;p class=&quot;descripcion&quot;&gt;Unas zapatillas Nike modelo Air Force en blancas.&lt;/p&gt; &lt;!-- Enlace de Compra --&gt; &lt;a class=&quot;boton-comprar&quot; href=&quot;https://www.nike.com/es/&quot;&gt;Comprar&lt;/a&gt; &lt;/div&gt; &lt;!-- Lista de Caracteristicas del Producto --&gt; &lt;h3&gt;Caracteristicas del Producto&lt;/h3&gt; &lt;div class=&quot;caracteristicas&quot;&gt; &lt;p&gt;Tela ligera y transpirable&lt;/p&gt; &lt;p&gt;Corte elegante y comodo&lt;/p&gt; &lt;p&gt;Modernas&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;
+">	
+            <br>
+            <img src="images\css15b.png" alt="&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Tienda de Ropa&lt;/title&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt; &lt;/head&gt; &lt;body&gt; &lt;!-- Encabezado Principal --&gt; &lt;h1 class=&quot;titulo-principal&quot;&gt;Bienvenido a la Tienda de Ropa&lt;/h1&gt; &lt;!-- Contenedor del Producto --&gt; &lt;div class=&quot;producto&quot;&gt; &lt;!-- Descripcion del Producto --&gt; &lt;h2&gt;Air Force&lt;/h2&gt; &lt;!-- Detalles del Producto --&gt; &lt;div class=&quot;detalles&quot;&gt; &lt;!-- Imagen del Producto --&gt; &lt;img src=&quot;zapatillas.png&quot; alt=&quot;Zapatillas&quot;&gt; &lt;!-- Precio del Producto --&gt; &lt;span class=&quot;precio&quot;&gt;$50&lt;/span&gt; &lt;!-- Descripcion del Producto --&gt; &lt;p class=&quot;descripcion&quot;&gt;Unas zapatillas Nike modelo Air Force en blancas.&lt;/p&gt; &lt;!-- Enlace de Compra --&gt; &lt;a class=&quot;boton-comprar&quot; href=&quot;https://www.nike.com/es/&quot;&gt;Comprar&lt;/a&gt; &lt;/div&gt; &lt;!-- Lista de Caracteristicas del Producto --&gt; &lt;h3&gt;Caracteristicas del Producto&lt;/h3&gt; &lt;div class=&quot;caracteristicas&quot;&gt; &lt;p&gt;Tela ligera y transpirable&lt;/p&gt; &lt;p&gt;Corte elegante y comodo&lt;/p&gt; &lt;p&gt;Modernas&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt; &lt;/html&gt;
+">	
+            <p>Ahora vamos a darle estilo a través de las reglas CSS.</p>
+            </p>
+                <ul style="list-style-type:NUMBER"> 
+                    <li><b>Estilo del Encabezado Principal</b><br>
+                        <img src="images\css16.png" alt="/* Regla 1: Estilo del Encabezado Principal */ .titulo-principal {color: #333; /* Cambia el color del texto a un tono oscuro */ text-align: center; /* Centra el texto */ }">	
+                    </li>
+                    <li><b>Estilo del Contenedor del Producto</b>  <br>
+                        <img src="images\css17.png" alt="/* Regla 2: Estilo del Contenedor del Producto */ .producto { max-width: 600px; margin: 0 auto; border: 1px solid #ccc; padding: 10px; text-align: center; }
+">
+                    </li>
+                    <li><b>Estilo de la Imagen del Producto</b> <br>
+                        <img src="images\css18.png" alt="/* Regla 3: Estilo de la Imagen del Producto */ .producto img { max-width: 100%; height: auto; }
+">	
+                    </li>
+                    <li><b>Estilo de los Detalles del Producto</b> <br>
+                        <img src="images\css19.png" alt="/* Regla 4: Estilo de los Detalles del Producto */ .detalles { background-color: #f9f9f9; padding: 10px; text-align: center; }
+">
+                    </li>
+                    <li><b>Estilo del Precio del Producto</b> <br>
+                        <img src="images\css20.png" alt="/* Regla 5: Estilo del Precio del Producto */ .precio { font-size: 18px; font-weight: bold; }
+">	
+                    </li>		
+                    <li><b>Estilo del Botón de Compra</b> <br>
+                        <img src="images\css21.png" alt="/* Regla 6: Estilo del Boton de Compra */ .boton-comprar { display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; font-size: 16px; }
+">	
+                    </li>
+                    <li><b>Estilo de la Descripción del Producto</b> <br>
+                        <img src="images\css22.png" alt="/* Regla 7: Estilo de la Descripcion del Producto */ .descripcion { font-size: 14px; margin-top: 10px; }
+">	
+                    </li>
+                    <li><b>Estilo de las Características del Producto</b> <br>
+                        <img src="images\css23.png" alt="/* Regla 8: Estilo de las Caracteristicas del Producto */ .caracteristicas { list-style-type: square; padding-left: 20px; text-align: center; }
+">	
+                    </li>
+                    <li><b>Alineación del Encabezado Principal</b> <br>
+                        <img src="images\css24.png" alt="/* Regla 9: Estilo de las Caracteristicas del Producto */ .caracteristicas { list-style-type: square; padding-left: 20px; text-align: center; }
+">	
+                    </li>
+                    <li><b>Alineación del Encabezado Principal</b> <br>
+                        <img src="images\css25.png" alt="/* Regla 9: Alineación del Encabezado Principal */ .titulo-principal { text-align: center; }
+">	
+                    </li>
+                </ul>
+            <p>Estas reglas CSS proporcionan estilos detallados para cada parte de la página web.
+            </p>
+        </section>
+        <!-- Contenido Parte 7 -->
+        <section id="parte7">
+            <h3>Cascada y Especificidad en CSS </h3>
+            <p>La cascada en CSS se refiere al proceso de determinar qué estilos se aplican a un elemento
+            cuando múltiples reglas compiten por afectar elmismo atributo. La cascada sigue un
+            conjunto de reglas que determina qué estilo tiene prioridad y se aplica al elemento.</p>
+                <ul> 
+                    <li><b>Especificidad:</b> La especificidad de una regla determina qué estilo tiene prioridad
+                    cuando múltiples reglas afectan almismo elemento.Una regla más específica prevalecerá
+                    sobre una reglamenos específica.	
+                    </li>
+                    <li><b>Orden:</b>  Si dos reglas tienen lamisma especificidad, la regla que aparecemás tarde
+                    en el archivo CSS prevalecerá.
+                    </li>
+                    <li><b>Importancia:</b> Algunos estilos pueden sermarcados comoimportantes <b>(!important)</b>,
+                    lo que les da la máxima prioridad, incluso sobre reglas más específicas.
+                    </li>
+                </ul>	
+            <p> La especificidad en CSS se refiere a lamanera en que se determina cuál regla se aplicará
+            cuando hay conflictos. Se calcula en función de ciertos selectores y su combinación en
+            una regla.
+            </p>
+        </section>
+        <!-- Contenido Parte 8 -->
+        <section id="parte8">
+            <h3>Box Model en CSS </h3>
+            <p>ElModelo de Caja es un concepto fundamental en CSS que describe cómo se representa
+            y se organiza cada elemento en una páginaweb. Cada elementoHTML se considera una
+            “caja” que incluye contenido, relleno (padding), borde (border) y margen (margin).</p>
+            <img src="images\css26.png" alt="Esquema del modelo caja en CSS">
+            <p>Los componentes del BoxModel son:</p>
+                <ul> 
+                    <li><b>Contenido (Content):</b> Es el área que contiene el contenido del elemento, como
+                    texto, imágenes, etc.
+                    </li>
+                    <li><b>Relleno (Padding):</b>  Es el espacio entre el contenido y el borde del elemento. Se
+                    puede establecer usando propiedades como “padding-top”, “padding-right”, “paddingbottom”
+                    y “padding-left”.
+                    </li>
+                    <li><b>Borde (Border):</b> Es una línea que rodea el elemento, separando el contenido del
+                    relleno. Se puede definir con propiedades como “border-width”, “border-style” y
+                    “border-color”.
+                    </li>
+                    <li><b>Margen (Margin):</b> Es el espacio entre el borde del elemento y los elementos adyacentes.
+                    Se puede especificar con propiedades como “margin-top”, “margin-right”,
+                    “margin-bottom” y “margin-left”.
+                    </li>
+                </ul>
+        </section>
+        <!-- Contenido Parte 9 -->
+        <section id="parte9">
+            <h3>El Modelo FlexBox </h3>
+            <p>El modelo Flexbox (también conocido como Flexible Box o caja fexible) es una técnica
+            de diseño en CSS que proporciona una forma más eficiente y fexible de organizar y
+            distribuir elementos en una página web. Fue introducido en CSS3 para abordar la dificultad de crear diseños complejos y adaptables utilizando métodos tradicionales.</p>
+            <p>Para conocer más delmodelo Fexbox, utilizaremos el juego en línea Flexbox Froggy</p>				
+        </section>
+        <!-- Contenido Parte 10 -->
+        <section id="parte10">
+            <h3>Imágenes y Fondo en CSS </h3>
+            <p>
+                <ul> 
+                    <li><b>Imágenes como Fondos:</b> Las imágenes también se pueden utilizar como fondos en elementos HTML utilizando propiedades de CSS. Por ejemplo:</li>
+                        <img src="images\css27.png" alt=".elemento { background-image: url('ruta_de_la_imagen.jpg'); background-size: cover; background-position: center center; }">
+                    <li><b>Propiedades de las Imágenes:</b> </li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>object-fit:</b>Controla cómo una imagen debe rellenar su contenedor manteniendo sus proporciones. Algunos valores comunes son “cover”, “contain” y “fill”.</li>
+                            <li><b>width y height:</b>Establecen el tamaño de una imagen en píxeles u otras unidades.</li>
+                        </ul>
+                    <li><b>Fondos en CSS:</b> </li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>background-color:</b>Establece el color de fondo de un elemento.</li>
+                            <img src="images\css28.png" alt=".elemento { background-color: #f0f0f0; /* Puedes usar nombres de colores o códigos hexadecimales */ }">
+                            <li><b>background-repeat:</b>Controla si una imagen de fondo se repite en el contenedor.</li>
+                            <img src="images\css29.png" alt=".elemento { background-image: url('ruta_de_la_imagen.jpg'); background-repeat: no-repeat; }">
+                            <li><b>background-attachment:</b>Determina si el fondo se desplaza con el contenido o se mantiene fijo</li>
+                            <img src="images\css30.png" alt="elemento { background-image: url('ruta_de_la_imagen.jpg'); background-attachment: fixed; }">								
+                        </ul>
+                    <li><b>Fondos conGradiente:</b> CSS también permite crear fondos con gradientes de color en lugar de imágenes.</li>
+                            <img src="images\css31.png" alt=".elemento { background-image: linear-gradient(to right, #ff7e5f, #feb47b); }">
+                </ul>
+            </p>
+        </section>
+        <!-- Contenido Parte 11 -->
+        <section id="parte11">
+            <h3>Tipografía y Colores en CSS </h3>
+            <p>
+                <ul> 
+                    <li><b>Estableciendo Tipografía:</b> </li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>Familias de Fuentes:</b>Puedes especicar diferentes familias de fuentes para los elementos de tu página web. Si la primera no está disponible, se usará la siguiente en la lista</li>
+                            <img src="images\css32.png" alt="body { font-family: Arial, sans-serif; }">								
+                            <li><b>Tamaño de Fuente:</b>Controla el tamaño del texto utilizando unidades como píxeles, em, porcentaje, entre otras.</li>
+                            <img src="images\css33.png" alt="h1 { font-size: 24px; }">
+                            <li><b>Peso de la Fuente:</b>Define el grosor de la fuente, como normal, bold, o valores numéricos.</li>
+                            <img src="images\css34.png" alt="h2 { font-weight: bold; }">								
+                            <li><b>Estilo de la Fuente:</b>Puedes aplicar estilos como normal, italic, o oblique.</li>
+                            <img src="images\css35.png" alt="p { font-style: italic; }">
+                        </ul>
+                    <li><b>Colores:</b> </li>
+                        <ul style="list-style-type:circle"> 
+                            <li><b>Color de Texto:</b>Establece el color del texto.</li>
+                            <img src="images\css36.png" alt="p { color: #333; /* Puedes usar nombres de colores, códigos hexadecimales, etc. */ }">
+                            <li><b>Fondo de Texto:</b>Define el color de fondo detrás del texto.</li>
+                            <img src="images\css37.png" alt="span { background-color: #f0f0f0; }">
+                        </ul>
+                    <li><b>Unidades de Medida Relativas:</b> Utiliza unidades de medida relativas como em, rem o porcentajes para hacer que tus diseños seanmás adaptables y escalables.</li>
+                            <img src="images\css38.png" alt="h3 { font-size: 1.5em; /* El tamaño de fuente es relativo al tamaño del elemento padre */ }">
+                    <li><b>Importación de Fuentes Externas:</b> Puedes importar fuentes externas desde servicios como Google Fonts.</li>
+                            <img src="images\css39.png" alt="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); body { font-family: 'Roboto', sans-serif; }">								
+                </ul>
+            </p>
+        </section>			
+        
+        <!-- Contenido Más Info -->
+        <section id="mas-info">
+            <h3>Más información</h3>
+            <p>Aquí puedes encontrar más contenido adicional, enlaces, referencias...</p>
+            <!-- Enlaces a pestaña nueva -->
+            <ul> 
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools Tutoriales</a></li>
+                <li><a href="https://www.ciudadano2cero.com/aprender-css-basico-desde-cero/" target="_blank">La guía rápida para aprender CSS básico desde cero</a></li>
+            </ul>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=fj1X2uVsnRFuvlF2&amp;list=PLROIqh_5RZeDbvISffzihyxzqJBt_z3-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <iframe src="docs/CSS_0_Documentacion (enlaces).pdf" width="600" height="400"></iframe>
+        </section>
+        
+        <!-- Contenido Autoevaluación -->
+        <section id="autoevaluacion">
+            <h3>Autoevaluación</h3>
+            <p>Contesta a las siguientes preguntas:</p>
+            <form>
+                <div class="pregunta" data-respuesta-correcta="si" data-comprobada="false">
+                    <p>¿En CSS, el selector por clase se utiliza para aplicar estilos específicamente a elementos que tienen un atributo id específico?</p>
+                    <select name="pregunta1">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="list-style-type" data-comprobada="false">
+                    <p>¿Cuál de las siguientes propiedades CSS se utiliza para establecer el tipo de marcadores en una lista?</p>
+                    <input type="radio" id="position" name="listProperty" value="list-style-position">
+                    <label for="position">A) list-style-position</label><br>
+
+                    <input type="radio" id="image" name="listProperty" value="list-style-image">
+                    <label for="image">B) list-style-image</label><br>
+
+                    <input type="radio" id="type" name="listProperty" value="list-style-type">
+                    <label for="type">C) list-style-type</label><br>
+
+                    <input type="radio" id="decoration" name="listProperty" value="list-decoration-type">
+                    <label for="decoration">D) list-decoration-type</label><br>
+
+                    <button type="button" onclick="comprobarRespuestaRadioButton(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="pseudo, margin" data-comprobada="false">
+                    <p>¿Cuáles de las siguientes afirmaciones sobre CSS son verdaderas, según la información del documento?</p>
+                    <input type="checkbox" id="flexbox" name="afirmaciones" value="flexbox">
+                    <label for="flexbox">A) El modelo Flexbox no permite la distribución eficiente de espacio entre ítems de un contenedor.</label><br>
+
+                    <input type="checkbox" id="pseudo" name="afirmaciones" value="pseudo">
+                    <label for="pseudo">B) Las pseudo-clases y pseudo-elementos permiten aplicar estilos a estados específicos o partes de un elemento.</label><br>
+
+                    <input type="checkbox" id="selector" name="afirmaciones" value="selector">
+                    <label for="selector">C) El selector #encabezado aplica estilos únicamente a elementos con una clase llamada "encabezado".</label><br>
+
+                    <input type="checkbox" id="margin" name="afirmaciones" value="margin">
+                    <label for="margin">D) La propiedad margin se puede utilizar para crear espacio alrededor de elementos.</label><br>
+
+                    <button type="button" onclick="comprobarRespuestaCheckBox(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="id" data-comprobada="false">
+                    <p>¿Cuáles de las siguientes afirmaciones sobre CSS son correctas según la información del documento?</p>
+                    <select id="afirmacionesCSS" name="afirmaciones" multiple size="4">
+                        <option value="id">A) Los selectores por ID se utilizan para aplicar estilos a grupos de elementos.</option>
+                        <option value="flex">B) display: flex; convierte al contenedor en un contenedor Flexbox.</option>
+                        <option value="fixed">C) position: fixed; mantiene un elemento en una posición estática en la pantalla.</option>
+                        <option value="bgcolor">D) La propiedad background-color define el color de fondo de un elemento.</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="letter-spacing" data-comprobada="false">
+                    <p><label for="respuestaPropiedadCSS">¿Qué propiedad CSS se utiliza para controlar el espaciado entre caracteres de texto?</label></p>
+                    <input type="text" id="respuestaPropiedadCSS" name="respuesta" placeholder="Introduce la propiedad CSS aquí">
+                    <button type="button" onclick="comprobarRespuestaTexto(this)">Comprobar</button>
+                </div>
+                
+                <p id="totalAciertos">Total de aciertos: 0</p>
+
+            </form>		
+        </section>
+        </div>
+
+
 </div>
