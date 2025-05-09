@@ -64,3 +64,175 @@ body {
         margin: 0.5rem 0;
     }
 }
+#menu-superior ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#menu-superior li {
+    margin: 0 10px;
+}
+
+#menu-superior a {
+    text-decoration: none;
+	color: #F0F0F0;
+	font-size: 26px;
+}
+#menu-lateral-titulo {
+    background-color: #86AADF;
+    color: #2B3E56;
+    padding: 10px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    background-color: #0B4E7C;
+    padding: 0px;
+    top: 90px;
+    height: 100%;
+		color: #F0F0F0;
+}
+
+#menu-lateral li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+	color: #F0F0F0;
+    overflow-y: auto;
+}
+
+#menu-lateral a.active {
+    font-weight: bold;
+}
+#autoevaluacion {
+    background-color: #f2f2f2;
+	padding: 20px;
+    margin-bottom: 200px;
+}
+
+#autoevaluacion h3 {
+    font-weight: bolder;
+    margin-top: 0px;
+}
+
+button {
+    font-family: Arial, sans-serif;
+	background-color: #FFFFFF;
+	color: #0B4E7C;
+    font-size: 16px; 
+	padding: 10px 20px; 
+    width: auto; 
+    height: auto; 
+	border-radius: 10px;
+    cursor: pointer; 
+}
+
+/* Estilo para el input */
+input[type="text"] {
+    font-family:  Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    padding: 5px;
+    margin: 10px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+}
+
+select {
+    font-family:  Arial, sans-serif;
+    font-size: 14px;
+	    color: #666;
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+#menu-superior a.activo {
+    font-weight: bold;
+}
+
+.contenedor {
+	display: flex;
+    justify-content: space-between; 
+}
+
+.pregunta p {
+    font-weight: bold;
+}
+
+.custom-button {
+    background-color: #6e706e; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.custom-red-button {
+    background-color: rgb(150, 0, 0); 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.custom-green-button {
+    background-color: rgb(0, 83, 18); 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Estilo para la imagen de la papelera */
+.delete-icon {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.example{
+    display: flex;
+    justify-content: center;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none; 
+}
+
+#menu-roles.mostrar-insignia .badge {
+    display: block; 
+}
