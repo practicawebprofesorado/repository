@@ -1,4 +1,245 @@
-<div class="page-content">
-    <h1>Usabilidad</h1>
-    <p>La usabilidad es fundamental para crear sitios web efectivos y fáciles de usar.</p>
-</div>
+
+<main>
+<div class="container">
+    <nav id="menu-lateral">
+        <h2 id="menu-lateral-titulo">Usabilidad y Accesibilidad</h2> <!-- Título del menú lateral -->
+        <ul>
+            <li><a href="#Introduccion">¿Qué es la usabilidad?</a></li>
+            <li><a href="#parte1">Principios de Usabilidad</a></li>
+            <li><a href="#parte2">Accesibilidad</a></li>
+            <li><a href="#mas-info">Más info</a></li>
+            <li><a href="#autoevaluacion">Autoevaluación</a></li>
+        </ul>
+    </nav>
+    <div id="contenido">
+        <section id="Introduccion">
+            <h3>¿Qué es la usabilidad?</h3>
+            <p>La usabilidad se refiere a la facilidad con la que los usuarios pueden interactuar con una
+                interfaz, ya sea un sitio web, una aplicación o cualquier otro sistema. Una interfaz usable es
+                aquella que permite a los usuarios lograr sus objetivos de manera eficiente, efectiva y
+                satisfactoria.</p>
+            <div class="example">
+                <img src="images\usability\heuristicas-de-jakob-nielsen-1.png"
+                    alt="Los 10 principios de usabilidad de Jakob Nielsen" width="900">
+            </div>
+        </section>
+        <section id="parte1">
+            <h3>Principios de Usabilidad</h3>
+            <p>Los principios de usabilidad de Nielsen son un conjunto de heurísticas o reglas generales
+                propuestas por Jakob Nielsen, un destacado experto en usabilidad y experiencia de usuario (UX),
+                para evaluar y mejorar la usabilidad de sistemas informáticos, interfaces de usuario y sitios
+                web.
+            <ul>
+                <li><b>Visibilidad del estado del sistema</b>
+                    El sistema debe mantener informado al usuario sobre lo que está ocurriendo en la web en todo
+                    momento. Por ejemplo, indicando mediante una animación que un recurso se está cargando.
+                </li>
+                <div class="example">
+                    <img src="https://cdn.pixabay.com/animation/2023/08/11/21/18/21-18-05-265_512.gif"
+                        alt="GIF animado" height="50">
+                </div>
+                <li><b>Consistencia entre el sistema y el mundo real</b>: La interfaz debe utilizar palabras,
+                    frases y conceptos familiares para el usuario. Es importante seguir las convenciones del
+                    mundo real para que la funcionalidad sea intuitiva. Por ejemplo, añadienco un icono de
+                    papelera al botón de eliminar.
+                </li>
+                <div class="example">
+                    <button class="custom-button">
+                        <img src="images\usability\papelera.png" alt="Papelera" class="delete-icon">
+                        Eliminar
+                    </button>
+                </div>
+                <li>
+                    <b>Control y libertad del usuario:</b> Siempre debe existir una “salida de emergencia” para
+                    revertir una acción no deseada. Los usuarios pueden cometer errores, y ofrecerles control
+                    sobre la plataforma les brinda seguridad. Por ejemplo, dando al usuario la posibilidad de
+                    revertir sus acciones o volver al comienzo.
+                </li>
+                <div class="example">
+                    <button class="custom-button">
+                        <img src="images\usability\home.png" alt="Home" class="delete-icon">
+                        Volver a Inicio
+                    </button>
+                </div>
+                <li><b>Consistencia y estándares:</b> La interfaz debe seguir patrones y convenciones
+                    establecidas. Esto facilita la comprensión y el uso por parte del usuario.
+                </li>
+                <div class="example">
+                    <button class="custom-green-button">
+                        Confirmar
+                    </button>
+                    <button class="custom-red-button">
+                        Cancelar
+                    </button>
+                </div>
+                <li>
+                    <b>Prevención de errores:</b> Realizar un diseño cuidadoso que prevenga la ocurrencia de
+                    problemas. Incluyendo información preventiva en el punto problemático, pidiendo confirmación
+                    al usuario o haciendo comprobaciones en tiempo real.
+                </li>
+                <div class="example">
+                    <img src="images\usability\dialogo-confirmacion.jpg"
+                        alt="Ejemplo de diálogo de confirmación">
+                </div>
+                <li><b>Reconocer antes que recordar: </b> Minimizar la carga de la memoria del usuario, haciendo
+                    que los objetos, acciones y opciones sean visibles. El usuario no debe tener que recordar
+                    información de una parte de la interfaz para otra. Por ejemplo ¿Cómo encontrar aquel
+                    producto que ha visto y le interesaba?
+                </li>
+                <div class="example">
+                    <img src="images\usability\productos-vistos-recientemente-woocommerce.jpg"
+                        alt="Ejemplo de sección de productos vistos recientemente de un sitio web" width="900">
+                </div>
+                <li><b>Flexibilidad y eficiencia de uso:</b> El diseño debe acomodar una amplia gama de niveles
+                    de habilidad entre los usuarios, facilitando las rutas de usuarios novatos y avanzados. Por
+                    ejemplo, mostrar los últimos artículos por los que se ha interesado el usuario enn su última
+                    visita, o en la visita en curso, ya que probablemente querrá volver a consultarlos.</li>
+                <div class="example">
+                    <img src="images\usability\productos-vistos-recientemente-woocommerce.jpg"
+                        alt="Ejemplo de sección de productos vistos recientemente de un sitio web" width="900">
+                </div>
+                <li><b>Diseño estético y minimalista: </b> El diseño de la interfaz debe ser limpio y no debe
+                    contener elementos innecesarios que distraigan o dificulten la tarea del usuario.</li>
+                <div class="example">
+                    <img src="images\usability\kiss.png" alt="Keep it Simple, Studip" width="250">
+                </div>
+                <li><b>Ayuda a los usuarios a reconocer, diagnosticar y recuperarse de errores:</b> Se deben
+                    proporcionar mensajes de error claros y sugerencias sobre cómo corregirlos. Por ejemplo,
+                    cuando un usuario intenta iniciar sesión en un sitio web con credenciales incorrectas, el
+                    sistema debería mostrar un mensaje de error indicando qué información es incorrecta y
+                    proporcionar un enlace para restablecer la contraseña si es necesario.</li>
+                <div class="example">
+                    <img src="images\usability\error-login.png"
+                        alt="Formulario de inicio de sesión de wordpress donde se indica que el nombre de usuario no es correcto"
+                        width="400">
+                </div>
+                <li><b>Ayuda y documentación:</b> El sistema debe proporcionar recursos de ayuda y documentación
+                    que sean fácilmente accesibles cuando los usuarios los necesiten.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section id="parte2">
+            <h3>Accesibilidad</h3>
+            <p>La accesibilidad web es la práctica de diseñar y desarrollar sitios web y aplicaciones
+                de manera que sean accesibles y utilizables por todas las personas, incluidas aquellas con
+                discapacidades. Esto implica garantizar que el contenido digital sea percibido, operado y
+                entendido por una amplia gama de usuarios, independientemente de sus capacidades físicas,
+                cognitivas o sensoriales.</p>
+            <p>Algunos consejos para mejorar la accesibilidad de tu web: </p>
+            <ul>
+                <li><b>Texto alternativo para imágenes: </b>Proporcionar descripciones textuales breves y
+                    descriptivas (atributo alt) para todas las imágenes en el sitio web, permitiendo que los
+                    usuarios con discapacidad visual puedan entender el contenido visual.</li>
+                <li><b>Contraste de colores adecuado: </b>Utilizar colores con suficiente contraste entre el
+                    texto y el fondo para mejorar la legibilidad, especialmente para personas con discapacidad
+                    visual o dificultades para distinguir ciertos colores.</li>
+                <li><b>Estructura y etiquetas semánticas: </b>Utilizar etiquetas semánticas de HTML (por
+                    ejemplo, etiquetas header, nav, main, footer, etc.) para proporcionar una estructura clara y
+                    significativa al contenido, facilitando la navegación y la comprensión para usuarios con
+                    lectores de pantalla.</li>
+                <li><b>Teclado como método de navegación: </b>>Asegurarse de que todas las funciones del sitio
+                    web sean accesibles y utilizables mediante el teclado, ya que algunas personas con
+                    discapacidades motoras pueden tener dificultades para usar un ratón.</li>
+                <li><b>Videos con subtítulos y transcripciones:</b> Incluir subtítulos para videos y
+                    proporcionar transcripciones textuales para usuarios con discapacidad auditiva o que
+                    prefieren consumir contenido de forma escrita.</li>
+                <li><b>Marcadores de página y títulos descriptivos: </b>Utilizar títulos de página descriptivos
+                    y proporcionar marcadores de página (también conocidos como "breadcrumbs") para ayudar a los
+                    usuarios a comprender la estructura del sitio web y facilitar la navegación.</li>
+            </ul>
+        </section>
+
+        <!-- Contenido Más Info -->
+        <section id="mas-info">
+            <h3>Más información</h3>
+            <p>Aquí puedes encontrar más contenido adicional, enlaces, referencias...</p>
+            <!-- Enlaces a pestaña nueva -->
+            <ul>
+                <li><a href="https://github.com/franjorub/libros/blob/master/UI-UX/No%20me%20hagas%20pensar%20(Usabilidad%20en%20la%20Web).pdf"
+                        target="_blank">No me hagas pensar. Una aproximación a la usabilidad Web</a></li>
+                <li><a href="docs/norma_europea.pdf" target="_blank">Normativa Europea sobre Accesibilidad</a>
+                </li>
+                <li><a href="docs/tools.pdf" target="_blank">Herramientas para evaluar la Accesibilidad</a></li>
+            </ul>
+        </section>
+
+        <!-- Contenido Autoevaluación -->
+        <section id="autoevaluacion">
+            <h3>Autoevaluación</h3>
+            <p>Contesta a las siguientes preguntas:</p>
+            <form>
+                <!-- Pregunta 1: Principios de Usabilidad de Nielsen -->
+                <div class="pregunta" data-respuesta-correcta="si" data-comprobada="false">
+                    <p><label for="pregunta1">¿Los principios de usabilidad de Nielsen son un conjunto de pautas diseñadas para evaluar
+                        la calidad de la experiencia de usuario en un sitio web o aplicación?<labek></p>
+                    <select id="pregunta1" name="pregunta1">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <!-- Pregunta 2: Accesibilidad Web -->
+                <div class="pregunta" data-respuesta-correcta="a" data-comprobada="false">
+                    <p><label for="pregunta2">¿Qué es la accesibilidad web?</label></p>
+                    <select id="pregunta2" name="pregunta2">
+                        <option value="a"> a. Es la práctica de diseñar y desarrollar sitios web y aplicaciones de
+                            manera que sean accesibles y utilizables por todas las personas, incluidas aquellas
+                            con discapacidades.</option>
+                        <option value="b">b. Es la práctica de diseñar y desarrollar sitios web únicamente para
+                            usuarios sin discapacidades.</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <!-- Pregunta 3: Contraste de colores -->
+                <div class="pregunta" data-respuesta-correcta="si" data-comprobada="false">
+                    <p><label for="pregunta3">¿Por qué es importante tener un buen contraste de colores en un sitio web?</label></p>
+                    <select id="pregunta3" name="pregunta3">
+                        <option value="a">a. Porque un buen contraste facilita la legibilidad del contenido y
+                            mejora la experiencia de usuario, especialmente para personas con discapacidad
+                            visual.</option>
+                        <option value="b">b. Porque un buen contraste de colores solo afecta la estética del sitio
+                            web, sin influir en la usabilidad.</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <!-- Pregunta 4: Etiquetas semánticas -->
+                <div class="pregunta" data-respuesta-correcta="header, section" data-comprobada="false">
+                    <fieldset>
+                        <p>¿<legend>Cuáles de las siguientes etiquetas HTML se consideran etiquetas semánticas?</legend></p>
+                        <input type="checkbox" id="header" name="etiquetas" value="header">
+                        <label for="header">A) &lt;header&gt;</label><br>
+                        <input type="checkbox" id="nav" name="etiquetas" value="nav">
+                        <label for="nav">B) &lt;nav&gt;</label><br>
+                        <input type="checkbox" id="div" name="etiquetas" value="div">
+                        <label for="div">C) &lt;div&gt;</label><br>
+                        <input type="checkbox" id="section" name="etiquetas" value="section">
+                        <label for="section">D) &lt;section&gt;</label><br>
+                    </fieldset>
+                    <button type="button" onclick="comprobarRespuestaCheckBox(this)">Comprobar</button>
+                </div>
+
+                <!-- Pregunta 5: Feedback del sistema -->
+                <div class="pregunta" data-respuesta-correcta="si" data-comprobada="false">
+                    <p><label for="pregunta5">¿Por qué es importante proporcionar feedback al usuario sobre el estado del sistema?</label></p>
+                    <select id="pregunta5" name="pregunta5">
+                        <option value="a">a. Porque ayuda a los usuarios a comprender lo que está sucediendo y a
+                            tomar decisiones informadas sobre sus acciones.</option>
+                        <option value="b">b. Porque el feedback del sistema no es relevante para la experiencia
+                            del usuario.</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <p id="totalAciertos">Total de aciertos: 0</p>
+            </form>
+        </section>
+
+
+
+
+    </div>
+</main>
