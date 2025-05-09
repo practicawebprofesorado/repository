@@ -1,4 +1,4 @@
-<script>
+
     // Cargar header
     fetch('header.html')
         .then(response => response.text())
@@ -26,4 +26,4 @@
                 document.getElementById('content').innerHTML = data;
             });
     }
-</script>
+
