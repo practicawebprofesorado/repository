@@ -236,3 +236,44 @@ section {
 #menu-roles.mostrar-insignia .badge {
     display: block; 
 }
+/* Footer */
+footer {
+    text-align: left;
+    padding: 1rem;
+    background: linear-gradient(90deg, #ebe6e0, #95ccda);
+    color: var(--clr-text);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--clr-text); /* Borde azul oscuro */
+}
+
+footer .footer-section {
+    margin: 0;
+    padding: 1rem;
+    flex: 1;
+    text-align: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer .footer-section:last-child {
+    border-right: none;
+}
+
+footer h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: var(--clr-text);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--clr-back);
+    font-weight: bold;
+}
