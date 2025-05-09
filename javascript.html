@@ -1,9 +1,285 @@
 <div class="page-content">
-    <h1>JavaScript</h1>
-    <p>JavaScript es un lenguaje de programación que permite crear contenido dinámico.</p>
-    <ul>
-        <li>Sintaxis básica</li>
-        <li>DOM</li>
-        <li>Eventos</li>
-    </ul>
+    <div class="container">
+        <nav id="menu-lateral">
+            <h2 id="menu-lateral-titulo">JavaScript</h2> <!-- Título del menú lateral -->
+            <ul>
+                <li><a href="#Introduccion">Introducción a JavaScript</a></li>
+                <li><a href="#parte1">Sintaxis básica</a></li>
+                <li><a href="#parte2">Funciones</a></li>
+                <li><a href="#parte3">Eventos y manipulación del DOM</a></li>
+                <li><a href="#parte4">Integración con HTML y CSS</a></li>
+                <li><a href="#mas-info">Más información</a></li>
+                <li><a href="#autoevaluacion">Autoevaluación</a></li>
+            </ul>
+        </nav>
+    <div id="contenido">
+        <section id="Introduccion">
+            <h3>Introducción a JavaScript</h3>
+            <p>JavaScript es un lenguaje de programación de alto nivel, interpretado y multiplataforma. 
+                Fue creado inicialmente por Brendan Eich en 1995 mientras trabajaba en Netscape Communications Corporation, 
+                con el objetivo de dotar a los navegadores web de la capacidad de ejecutar scripts del lado del cliente, 
+                es decir, en el navegador del usuario. Desde entonces, JavaScript se ha convertido en uno de los lenguajes 
+                de programación más populares y ampliamente utilizados en el mundo del desarrollo web.</p>
+
+            <p>Su popularidad se debe principalmente a que es el lenguaje de programación predeterminado en todos los navegadores 
+                web modernos, lo que lo convierte en una herramienta esencial para el desarrollo de aplicaciones web interactivas y dinámicas. </p>
+                
+            <p>JavaScript se utiliza para agregar interactividad a las páginas web, permitiendo que los elementos de la página respondan 
+                a la interacción del usuario, como hacer clic en botones, rellenar formularios, desplazarse por la página, entre otras acciones. 
+                Además, JavaScript también se utiliza en el desarrollo de aplicaciones web más complejas, incluidas aplicaciones de una sola página 
+                (Single Page Applications, SPAs) y aplicaciones web progresivas (Progressive Web Apps, PWAs).</p>
+                
+            <p>Es importante tener en cuenta que JavaScript no está limitado solo al desarrollo del lado del cliente. Con el surgimiento de Node.js, 
+                una plataforma de tiempo de ejecución de JavaScript basada en el motor V8 de Google Chrome, JavaScript también se puede utilizar para 
+                desarrollar aplicaciones del lado del servidor, lo que le permite a los desarrolladores construir aplicaciones web completas utilizando 
+                un solo lenguaje de programación tanto en el cliente como en el servidor. Esto ha contribuido aún más a la popularidad y versatilidad de 
+                JavaScript en el mundo del desarrollo web.</p>
+            <img src="images\js1.png" alt="Logotipo de JavaScript">
+        </section>
+        <section id="parte1">
+            <h3>Sintaxis básica</h3>
+            <p> La sintaxis básica de JavaScript abarca los elementos fundamentales que se necesitan para escribir y comprender código en este lenguaje. 
+                Aquí tienes una descripción detallada: </p>
+            <ul> 
+                <li><b>Variables y tipos de datos: </b></li>
+                <p>JavaScript es un lenguaje de tipado dinámico, lo que significa que no es necesario declarar explícitamente el tipo de una variable al crearla. 
+                    Las variables se declaran utilizando las palabras clave var, let o const. Los tipos de datos en JavaScript incluyen números, cadenas de texto, 
+                    booleanos, objetos, arreglos, funciones, entre otros.
+                </p>
+                <img src="images\js2.png" alt="let nombreDeLaVariable=&quot;Bob&quot;">
+
+                <li><b>Operadores: </b> </li>
+                <p>JavaScript incluye una variedad de operadores para realizar operaciones aritméticas, de asignación, de comparación y lógicas.
+                    Los operadores aritméticos incluyen suma (+), resta (-), multiplicación (*), división (/) y otros.
+                    Los operadores de asignación incluyen =, +=, -=, *=, /=, entre otros.
+                    Los operadores de comparación incluyen ==, ===, !=, !==, <, >, <=, >=, entre otros.
+                </p>
+
+                <li><b>Estructuras de control</b></li>
+                <p>Las estructuras de control permiten tomar decisiones y ejecutar código de manera condicional.
+                    La estructura if-else permite ejecutar cierto código si se cumple una condición y otro código si no se cumple.
+                    Los bucles for, while y do-while se utilizan para ejecutar repetidamente un bloque de código mientras se cumple una condición.
+                </p>
+                <img src="images\js4.png" alt="let helado = &quot;chocolate&quot;; if (helado === &quot;chocolate&quot;) { console.log(&quot;¡Me encanta el helado de chocolate!&quot;); } else { console.log(&quot;Prefiero otro sabor de helado.&quot;); }">
+
+                <li><b>Funciones: </b></li>
+                <p>Las funciones en JavaScript permiten encapsular bloques de código para su reutilización.
+                    Se pueden declarar funciones utilizando la palabra clave function.
+                    Las funciones pueden tener parámetros y devolver valores utilizando la palabra clave return.
+                </p>
+                <img src="images\js5.png" alt="function multiplica(num1, num2) { return num1 * num2; }">
+
+                <li><b>Objetos y Arrays</b></li>
+                <p>Los objetos permiten almacenar colecciones de datos estructurados utilizando pares de clave-valor.
+                    Los arrays son estructuras de datos que permiten almacenar múltiples valores en una sola variable.
+                    Se accede a los elementos de un objeto o array utilizando la notación de corchetes ([]).
+                </p>
+
+                <li><b>Comentarios</b></li>
+                <p> JavaScript admite comentarios de una sola línea (//) y comentarios de varias líneas (/* */), 
+                    que son útiles para documentar el código y hacerlo más legible
+                </p>
+                <img src="images\js7.png" alt="/* Este es un comentario de varias líneas. */">
+
+                <li><b>Ámbito y contexto</b></li>
+                <p> JavaScript tiene ámbito de función, lo que significa que las variables declaradas dentro de una función 
+                    solo son visibles dentro de esa función. El contexto de ejecución en JavaScript determina el valor de 'this' en una función.
+                </p>
+
+                <li><b>Operaciones con cadenas y arrays</b></li>
+                <p>
+                    JavaScript proporciona métodos y operadores para manipular cadenas de texto y arrays, como split(), join(), slice(), concat(), entre otros.
+                </p>
+            </ul>	
+        </section> 
+        <!-- Contenido Parte 2 -->
+        <section id="parte2">
+            <h3>Funciones</h3>
+            <p>Las funciones son uno de los conceptos fundamentales en JavaScript y se utilizan para encapsular y reutilizar bloques de código.</p>
+            <br>
+            <ul> 
+                <li><b> Declaración de funciones </b></li>	
+                    <p>En JavaScript, las funciones se pueden declarar de varias maneras. La forma más común es utilizando la palabra clave function, 
+                    seguida del nombre de la función y paréntesis que pueden contener los parámetros de entrada. </p>
+                    <img src="images\js8.png" alt="function saludar(nombre) { return &quot;¡Hola, &quot; + nombre + &quot;! ¿Cómo estás?&quot;; }
+">
+
+                <li><b> Llamada de funciones </b></li>
+                 <p> Para ejecutar una función, simplemente se llama utilizando su nombre y proporcionando los argumentos necesarios (si los hay)</p>			
+                 <img src="images\js9.png" alt="saludar(&quot;Juan&quot;)">
+
+                 <li><b> Parámetros y argumentos </b> </li> 
+                 <p>Los parámetros son variables que se definen en la declaración de la función y representan los valores que se pasan a la función 
+                    cuando se llama. Los argumentos son los valores reales que se pasan a la función cuando se la llama. En el ejemplo anterior, 
+                    nombre es un parámetro de la función saludar, mientras que "Juan" es el argumento que se pasa a la función al llamarla. </p>
+
+                <li><b> Valor retorno </b> </li> 
+                <p>
+                    Las funciones pueden devolver un valor utilizando la palabra clave return.
+                </p> 
+                <img src="images\js10.png" alt="function sumar(num1, num2) { return num1 + num2; } let resultadoSuma = sumar(5, 10); console.log(&quot;El resultado de la suma es: &quot; + resultadoSuma);
+">
+                </li>	
+            </ul>	
+        </section>
+        
+        <!--Contenido Parte 3-->
+        <section id="parte3">
+            <h3>Eventos y manipulación del DOM</h3>
+            <p>En el desarrollo web con JavaScript, los eventos y la manipulación del DOM (Document Object Model) son conceptos cruciales.</p>
+            <br>
+            
+            <ul> 
+                <li><b> Eventos </b></li>	
+                <p>
+                    Los eventos son acciones que ocurren en el navegador, como hacer clic en un botón, mover el mouse sobre un elemento, 
+                    escribir en un campo de texto, cargar una página, etc. JavaScript nos permite capturar estos eventos y responder a 
+                    ellos ejecutando funciones específicas.
+                </p>
+                <p>
+                    Para capturar un evento, se utiliza el método addEventListener() que está disponible en los elementos del DOM.
+                </p>
+                <img src="images\js11.png" alt="DevWeb">
+
+                <li><b> Manipulación del DOM </b></li>	
+                <p>
+                    El DOM es una representación en forma de árbol de la estructura de un documento HTML. Con JavaScript, 
+                    podemos acceder y manipular este árbol para cambiar dinámicamente el contenido, estilo y comportamiento 
+                    de una página web.
+                </p>
+            </ul>	
+        </section>
+
+        <!--Contenido Parte 4-->
+        <section id="parte4">
+            <h3>Integración con HTML y CSS</h3>
+            <p>La integración de JavaScript con HTML y CSS es esencial para crear aplicaciones web dinámicas e interactivas.</p>
+            <br>
+            
+            <ul> 
+                <li><b> Acceso a elementos HTML </b></li>	
+                <p>
+                    JavaScript permite acceder a los elementos HTML de varias maneras.
+                </p>
+                <ul>
+                    <li>
+                        document.getElementById(id): Permite acceder a un elemento HTML utilizando su atributo de identificación (id).
+                    </li>
+                    <li>
+                        document.getElementsByClassName(className): Permite acceder a una lista de elementos HTML que tienen la misma clase.
+                    </li>
+                    <li>
+                        document.getElementsByTagName(tagName): Permite acceder a una lista de elementos HTML que tienen el mismo nombre de etiqueta.
+                    </li>
+                    <li>
+                        document.querySelector(selector): Permite seleccionar el primer elemento que coincida con un selector CSS.
+                    </li>
+                    <li>
+                        document.querySelectorAll(selector): Permite seleccionar todos los elementos que coincidan con un selector CSS.
+                    </li>
+                </ul>
+
+                <li><b> Manipulación del HTML </b></li>	
+                <p>
+                    Una vez que se accede a un elemento HTML, JavaScript permite manipular su contenido utilizando diferentes propiedades, 
+                    como 'innerHTML', 'textContent', 'innerText', 'value', entre otras.
+                </p>
+
+                <li><b> Cambio de estilos CSS </b></li>
+                <p>
+                    JavaScript también permite cambiar los estilos CSS de los elementos HTML. Esto se puede hacer modificando las propiedades de estilo del elemento.
+                </p>
+            </ul>	
+        </section>
+
+        
+
+        <!-- Contenido Más Info -->
+        <section id="mas-info">
+            <h3>Más información</h3>
+            <p>Aquí puedes encontrar más contenido adicional, enlaces, referencias...</p>
+            <!-- Enlaces a pestaña nueva -->
+            <ul> 
+                <li><a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps" target="_blank">Primeros pasos con JavaScript</a></li>
+                <li><a href="https://es.javascript.info/" target="_blank">Tutorial de JavaScript Moderno</a></li>
+            </ul>
+        </section>
+        
+        <!-- Contenido Autoevaluación -->
+        <section id="autoevaluacion">
+            <h3>Autoevaluación</h3>
+            <p>Contesta a las siguientes preguntas:</p>
+            <form>
+                <div class="pregunta" data-respuesta-correcta="falso">
+                    <p>Verdadero o falso: La función document.getElementById() permite acceder a un elemento HTML utilizando su atributo de clase.</p>
+                    <select name="pregunta1">
+                        <option value="verdadero">Verdadero</option>
+                        <option value="falso">Falso</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="a) backgroundColor">
+                    <fieldset>
+                    <p><legend>¿Qué propiedad se utiliza para cambiar el color de fondo de un elemento HTML en JavaScript?</legend></p>
+                    <input type="radio" id="position" name="listProperty" value="a) backgroundColor">
+                    <label for="position">a) backgroundColor</label><br>
+
+                    <input type="radio" id="image" name="listProperty" value="b) color">
+                    <label for="image">b) color</label><br>
+
+                    <input type="radio" id="type" name="listProperty" value="c) background">
+                    <label for="type">c) background</label><br>
+
+                    <input type="radio" id="decoration" name="listProperty" value="d) background-color">
+                    <label for="decoration">d) background-color</label><br>
+                    </fieldset>
+
+                    <button type="button" onclick="comprobarRespuestaRadioButton(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="innertext, textcontent">
+                    <fieldset>
+                        <p><legend>¿Qué método se utiliza para cambiar el contenido de un elemento HTML en JavaScript?</legend></p>
+                        <input type="checkbox" id="innertext" name="afirmaciones" value="innertext">
+                        <label for="innertext">a) innerText</label><br>
+
+                        <input type="checkbox" id="textcontent" name="afirmaciones" value="textcontent">
+                        <label for="textcontent">b) textContent</label><br>
+
+                        <input type="checkbox" id="innerhtml"  name="afirmaciones" value="innerhtml">
+                        <label for="innerhtml">c) innerHTML</label><br>
+
+                        <input type="checkbox" id="onclick" name="afirmaciones" value="onclick">
+                        <label for="onclick">d) onclick</label><br>
+                    </fieldset>
+
+                    <button type="button" onclick="comprobarRespuestaCheckBox(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="d">
+                    <p>¿Cuál de las siguientes no es una forma de declarar una función en JavaScript?</p>
+                    <select id="afirmacionesCSS" name="afirmaciones" multiple size="4">
+                        <option value="a">a) function myFunction() {}</option>
+                        <option value="b">b) var myFunction = function() {}</option>
+                        <option value="c">c) () => {}</option>
+                        <option value="d">d) myFunction: function() {}</option>
+                    </select>
+                    <button type="button" onclick="comprobarRespuesta(this)">Comprobar</button>
+                </div>
+
+                <div class="pregunta" data-respuesta-correcta="click">
+                    <p><label for="respuestaPropiedadCSS">¿Qué evento HTML se desencadena cuando se hace clic en un botón?</label></p>
+                    <input type="text" id="respuestaPropiedadCSS" name="respuesta" placeholder="Introduce el evento aquí">
+                    <button type="button" onclick="comprobarRespuestaTexto(this)">Comprobar</button>
+                </div>	
+                
+                <p id="totalAciertos">Total de aciertos: 0</p>
+
+            </form>				
+        </section>
+
+
+        
+    </div>
 </div>
