@@ -1,13 +1,57 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Estilos generales */
+/* ====================
+   Variables & Reset
+   ==================== */
+   :root {
+    --clr-ini:#FFD700;
+    --clr-met: #FFA07A;
+    --clr-html: #87CEFA;
+    --clr-js: #259ee9;
+    --clr-css: #FFB6C1;
+    --clr-usab: #FFADAD;
+    --clr-auto: #98FB98;
+    --clr-bg: #fff;
+    --clr-text: #1e025d;
+    --clr-back: #ebe6e0;
+    --ff-main: 'Colonna MT', Tahoma, sans-serif;
+    --spacing: 1rem;
+  }
+/* Cabecera */  
+header {
+    position: fixed;
+    width: 100%; 
+    background: linear-gradient(90deg, #ebe6e0, #95ccda); /* Fondo degradado */
+    color: var(--clr-text);
+    padding: 0.6rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--clr-text); /* Borde azul oscuro */
 }
 
-#header {
-    background-color: #333;
-    padding: 1rem;
+header .logo {
+    font-size: 2rem;
+    font-weight: bold; /* negrita */
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem; /* espacio después del texto */
+}
+
+/* Color modifiers */
+nav .menu__item--ini { background: var(--clr-ini); }
+nav .menu__item--met { background: var(--clr-met); }
+nav .menu__item--html { background: var(--clr-html); }
+nav .menu__item--css { background: var(--clr-css); }
+nav .menu__item--js  { background: var(--clr-js); }
+nav .menu__item--usabilidad { background: var(--clr-usab); }
+nav .menu__item--autoevaluacion { background: var(--clr-auto); }
+
+/* Cuerpo */
+body {
+    font-family: var(--ff-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-back);
+    color: var(--clr-text);
+    line-height: auto;
 }
 
 .main-nav ul {
