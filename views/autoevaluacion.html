@@ -1,0 +1,193 @@
+<section class="section" id="autoevaluacion">
+  <div class="container">
+    <form id="quizForm">
+        <div id="contenido">
+            <h1>Autoevaluación de Desarrollo Web</h1>
+            <p class="help-text">Selecciona las respuestas correctas para cada pregunta. Puedes validar cada pregunta individualmente o todas al final.</p>
+
+            <!-- Sección HTML -->
+            <div class="section-title"><h2>HTML</h2></div>
+            <div class="question" id="q1">
+                <h3>1. ¿Qué significa HTML?</h3>
+                <input type="text" id="question1" name="question1" placeholder="Escribe la respuesta completa">
+                <p class="help-text">Escribe el significado completo en inglés</p>
+                <div id="label-1"></div>
+                <button type="button" onclick="validateQuestion(1)">Validar</button>
+            </div>
+            <div class="question" id="q2">
+                <h3>2. ¿Cuál es la etiqueta correcta para crear un hipervínculo?</h3>
+                <div class="options-container" id="options2">
+                    <label><input type="radio" name="question2" value="a"> &lt;link&gt;</label>
+                    <label><input type="radio" name="question2" value="b"> &lt;a&gt;</label>
+                    <label><input type="radio" name="question2" value="c"> &lt;href&gt;</label>
+                    <label><input type="radio" name="question2" value="d"> &lt;hyperlink&gt;</label>
+                </div>
+                <div id="label-2"></div>
+                <button type="button" onclick="validateQuestion(2)">Validar</button>
+            </div>
+            <div class="question" id="q3">
+                <h3>3. ¿Cuál es el elemento HTML correcto para reproducir video?</h3>
+                <select id="question3" name="question3">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="media">&lt;media&gt;</option>
+                    <option value="video">&lt;video&gt;</option>
+                    <option value="movie">&lt;movie&gt;</option>
+                    <option value="player">&lt;player&gt;</option>
+                </select>
+                <div id="label-3"></div>
+                <button type="button" onclick="validateQuestion(3)">Validar</button>
+            </div>
+            <div class="question" id="q4">
+                <h3>4. ¿Cuáles son elementos semánticos en HTML5?</h3>
+                <div class="options-container" id="options4">
+                    <label><input type="checkbox" name="question4" value="header"> &lt;header&gt;</label>
+                    <label><input type="checkbox" name="question4" value="article"> &lt;article&gt;</label>
+                    <label><input type="checkbox" name="question4" value="section"> &lt;section&gt;</label>
+                    <label><input type="checkbox" name="question4" value="content"> &lt;content&gt;</label>
+                </div>
+                <div id="label-4"></div>
+                <button type="button" onclick="validateQuestion(4)">Validar</button>
+            </div>
+            <!-- Sección CSS -->
+            <div class="section-title"><h2>CSS</h2></div>
+            <div class="question" id="q5">
+                <h3>5. Selecciona todas las propiedades CSS que afectan al layout:</h3>
+                <select id="question5" name="question5" multiple size="5">
+                    <option value="display">display</option>
+                    <option value="position">position</option>
+                    <option value="color">color</option>
+                    <option value="float">float</option>
+                    <option value="font-size">font-size</option>
+                </select>
+                <div id="label-5"></div>
+                <p class="help-text">Mantén presionada la tecla Ctrl para selección múltiple</p>
+                <button type="button" onclick="validateQuestion(5)">Validar</button>
+            </div>
+            <div class="question" id="q6">
+                <h3>6. ¿Cuál es la especificidad del selector #header .nav > li?</h3>
+                <input type="text" id="question6" name="question6" placeholder="Escribe el número">
+                <div id="label-6"></div>
+                <p class="help-text">Calcula la especificidad según las reglas de CSS</p>
+                <button type="button" onclick="validateQuestion(6)">Validar</button>
+            </div>
+            <div class="question" id="q7">
+                <h3>7. ¿Qué propiedad CSS se usa para cambiar el tipo de cursor?</h3>
+                <select id="question7" name="question7">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="cursor">cursor</option>
+                    <option value="pointer">pointer</option>
+                    <option value="mouse">mouse</option>
+                    <option value="hand">hand</option>
+                </select>
+                <div id="label-7"></div>
+                <button type="button" onclick="validateQuestion(7)">Validar</button>
+            </div>
+            <div class="question" id="q8">
+                <h3>8. ¿Cuál es el valor por defecto de la propiedad position?</h3>
+                <div class="options-container" id="options8">
+                    <label><input type="radio" name="question8" value="a"> relative</label>
+                    <label><input type="radio" name="question8" value="b"> static</label>
+                    <label><input type="radio" name="question8" value="c"> fixed</label>
+                    <label><input type="radio" name="question8" value="d"> absolute</label>
+                </div>
+                <div id="label-8"></div>
+                <button type="button" onclick="validateQuestion(8)">Validar</button>
+            </div>
+            <!-- Sección JavaScript -->
+            <div class="section-title"><h2>JavaScript</h2></div>
+            <div class="question" id="q9">
+                <h3>9. ¿Cuáles son los tipos de datos primitivos en JavaScript?</h3>
+                <div class="options-container" id="options9">
+                    <label><input type="checkbox" name="question9" value="number"> Number</label>
+                    <label><input type="checkbox" name="question9" value="string"> String</label>
+                    <label><input type="checkbox" name="question9" value="boolean"> Boolean</label>
+                    <label><input type="checkbox" name="question9" value="array"> Array</label>
+                    <label><input type="checkbox" name="question9" value="undefined"> Undefined</label>
+                </div>
+                <div id="label-9"></div>
+                <button type="button" onclick="validateQuestion(9)">Validar</button>
+            </div>
+            <div class="question" id="q10">
+                <h3>10. ¿Qué método se utiliza para detener la propagación de eventos?</h3>
+                <select id="question10" name="question10">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="stopPropagation">stopPropagation()</option>
+                    <option value="preventPropagation">preventPropagation()</option>
+                    <option value="stopEvent">stopEvent()</option>
+                    <option value="cancelPropagation">cancelPropagation()</option>
+                </select>
+                <div id="label-10"></div>
+                <button type="button" onclick="validateQuestion(10)">Validar</button>
+            </div>
+            <div class="question" id="q11">
+                <h3>11. Selecciona los métodos correctos para manipular arrays:</h3>
+                <select id="question11" name="question11" multiple size="5">
+                    <option value="push">push()</option>
+                    <option value="pop">pop()</option>
+                    <option value="remove">remove()</option>
+                    <option value="shift">shift()</option>
+                    <option value="delete">delete()</option>
+                </select>
+                <div id="label-11"></div>
+                <p class="help-text">Mantén presionada la tecla Ctrl para selección múltiple</p>
+                <button type="button" onclick="validateQuestion(11)">Validar</button>
+            </div>
+            <div class="question" id="q12">
+                <h3>12. ¿Cuál es el operador de igualdad estricta en JavaScript?</h3>
+                <div class="options-container" id="options12">
+                    <label><input type="radio" name="question12" value="a"> ==</label>
+                    <label><input type="radio" name="question12" value="b"> ===</label>
+                    <label><input type="radio" name="question12" value="c"> =</label>
+                    <label><input type="radio" name="question12" value="d"> !=</label>
+                </div>
+                <div id="label-12"></div>
+                <button type="button" onclick="validateQuestion(12)">Validar</button>
+            </div>
+            <!-- Sección Usabilidad -->
+            <div class="section-title"><h2>Usabilidad</h2></div>
+            <div class="question" id="q13">
+                <h3>13. ¿Cuáles son los componentes principales de la experiencia de usuario (UX)?</h3>
+                <div class="options-container" id="options13">
+                    <label><input type="checkbox" name="question13" value="usable"> Usabilidad</label>
+                    <label><input type="checkbox" name="question13" value="desirable"> Deseable</label>
+                    <label><input type="checkbox" name="question13" value="findable"> Encontrable</label>
+                    <label><input type="checkbox" name="question13" value="complex"> Complejidad</label>
+                </div>
+                <div id="label-13"></div>
+                <button type="button" onclick="validateQuestion(13)">Validar</button>
+            </div>
+            <div class="question" id="q14">
+                <h3>14. ¿Cuál es el tiempo máximo recomendado de carga de una página web?</h3>
+                <select id="question14" name="question14">
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="2">2 segundos</option>
+                    <option value="5">5 segundos</option>
+                    <option value="10">10 segundos</option>
+                    <option value="15">15 segundos</option>
+                </select>
+                <div id="label-14"></div>
+                <button type="button" onclick="validateQuestion(14)">Validar</button>
+            </div>
+            <div class="question" id="q15">
+                <h3>15. ¿Cuál es el número máximo recomendado de elementos en un menú de navegación?</h3>
+                <input type="text" id="question15" name="question15" placeholder="Escribe solo el número">
+                <div id="label-15"></div>
+                <button type="button" onclick="validateQuestion(15)">Validar</button>
+            </div>
+            <div class="question" id="q16">
+                <h3>16. ¿Cuál es el principio de usabilidad más importante según Nielsen?</h3>
+                <div class="options-container" id="options16">
+                    <label><input type="radio" name="question16" value="a"> Visibilidad del estado del sistema</label>
+                    <label><input type="radio" name="question16" value="b"> Prevención de errores</label>
+                    <label><input type="radio" name="question16" value="c"> Control y libertad del usuario</label>
+                    <label><input type="radio" name="question16" value="d"> Consistencia y estándares</label>
+                </div>
+                <div id="label-16"></div>
+                <button type="button" onclick="validateQuestion(16)">Validar</button>
+            </div>
+            <button type="button" onclick="validateAll()" class="validate-all">Validar Todas las Respuestas</button>
+            <div id="result"></div>
+        </div>
+    </form>
+  </div>
+</section>

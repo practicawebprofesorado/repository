@@ -1,0 +1,446 @@
+<section class="section" id="css">
+  <div class="container">
+    <!-- Menú lateral -->
+    <nav id="menu-lateral">
+      <h2>CSS</h2>
+      <ul>
+        <br>
+        <li><a href="#Intro">Introducción a CSS</a></li>
+        <li><a href="#Contenido1">Cómo enlazar CSS con HTML</a></li>
+        <li><a href="#Contenido2">Sintaxis de una regla CSS</a></li>
+        <li><a href="#Contenido3">Selección de elementos en CSS</a></li>
+        <li><a href="#Contenido4">Propiedades y valores en CSS</a></li>
+        <li><a href="#Contenido5">Aplicando estilos con CSS</a></li>
+        <li><a href="#Contenido6">Cascada y especificidad en CSS</a></li>
+        <li><a href="#Contenido7">El modelo Box Model</a></li>
+        <li><a href="#Contenido8">El modelo Flexbox </a></li>
+        <li><a href="#Contenido9">Imágenes y fondos en CSS</a></li>
+        <li><a href="#Contenido10">Tipografía y colores en CSS</a></li>
+        <li><a href="#ContenidoExterno">Más información y recursos</a></li>
+      </ul>
+    </nav>
+    <!-- Contenido principal -->
+    <div id="contenido">
+      <section id="Intro">
+        <h3>Introducción a CSS</h3>
+        <p>
+          CSS, siglas de <i>Cascading Style Sheets</i> o Hojas de Estilo en Cascada, es un lenguaje fundamental en el desarrollo web que se utiliza
+          para definir la apariencia visual de los documentos HTML. Gracias a CSS, los desarrolladores pueden controlar cómo se presentan los elementos
+          en una página web, incluyendo aspectos como colores, tamaños, tipos de letra, márgenes, espaciado, alineación y disposición de los contenidos.
+        </p>
+        <br>
+        <p>
+          Este lenguaje permite separar el contenido (HTML) del diseño, lo que facilita la creación de sitios web más limpios, organizados
+          y fáciles de mantener. CSS también permite aplicar estilos de forma consistente en múltiples páginas, mejorar la accesibilidad y
+          optimizar la experiencia del usuario. Además, ofrece herramientas para adaptar el diseño a distintos dispositivos, como móviles, tabletas
+          y pantallas de escritorio, mediante técnicas como el diseño responsivo (<i>responsive design</i>).
+        </p>
+        <br>
+        <div class="example">
+          <img src="img/css/css1.png" alt="CSS contenido"/>
+        </div>
+      </section>
+      <br>
+      <section id="Contenido1">
+        <h3>Cómo enlazar CSS con HTML</h3>
+        <p>
+          Para aplicar estilos a una página web, es necesario vincular tu archivo CSS al documento HTML. Esto se logra utilizando
+          la etiqueta &lt;link&gt; dentro de la sección &lt;head&gt; del archivo HTML. Este enlace le indica al navegador que debe cargar y aplicar
+          los estilos definidos en el archivo CSS externo.
+        </p>
+        <br>
+        <p>
+          Los pasos para enlazar CSS a HTML serían:
+            <ul>
+				     	<li>Crea un archivo CSS: escribe tus reglas de estilo en un archivo con extensión .css, por ejemplo, styles.css.</li>
+					    <li>Guarda el archivo: puedes colocarlo en la misma carpeta que tu HTML o en una subcarpeta como css/. Asegúrate de conocer la ruta exacta.</li>
+					    <li>Agrega el enlace en HTML: dentro de la etiqueta &lt;head&gt; de tu documento HTML, incluye la siguiente línea:</li>
+				    </ul>
+            <div class="example">
+              <img src="img/css/css2.png" alt="Etiqueta link rel stylesheet"/>
+            </div>
+            <ul>
+					    <li><b>rel=“stylesheet”</b> indica que el archivo enlazado es una hoja de estilos.</li>
+					    <li><b>href=“...”</b> especifica la ubicación del archivo CSS.</li>
+				    </ul>       
+          Cuando el navegador carga la página, también buscará el archivo CSS y aplicará automáticamente los estilos definidos.
+          Esta separación entre estructura (HTML) y presentación (CSS) mejora la organización del código, facilita el mantenimiento
+          y permite reutilizar estilos en múltiples páginas.
+        </p>               
+      </section>
+      <br>
+      <section id="Contenido2">
+        <h3>Sintaxis de una regla CSS</h3>
+        <p>
+          Antes de comenzar a aplicar estilos, es fundamental comprender la estructura básica de una regla CSS.
+          Cada regla está compuesta por tres partes principales: el <b>selector</b>, la <b>propiedad</b> y el <b>valor</b>. La sintaxis general es la siguiente:
+        </p>
+        <div class="example">
+          <img src="img/css/css3.png" alt="selector { propiedad:valor; }"/>
+        </div>        
+        <p>
+					<ul> 
+						<li><b>Selector:</b> indica a qué elemento(s) HTML se aplicará la regla. Puede ser una etiqueta, una clase, un ID o una combinación más compleja.</li>
+						<li><b>Propiedad:</b> es la característica visual que deseas modificar, como el color, el tamaño de fuente, el margen, etc.</li>
+						<li><b>Valor:</b> especifica el ajuste que se aplicará a la propiedad, como red, 16px, center, entre otros.</li>
+					</ul>
+          Por ejemplo, la regla p { color: blue; } aplicará el color azul a todos los párrafos (&lt;p&gt;) del documento. 
+          Esta estructura clara y flexible permite personalizar el diseño de una página web con precisión y eficiencia.
+          Además, puedes agrupar múltiples propiedades dentro de un mismo selector para aplicar varios estilos a la vez.          
+        </p>        
+      </section>
+      <br>
+      <section id="Contenido3">
+        <h3>Selección de elementos en CSS</h3>
+        <p>
+          La selección de elementos es uno de los aspectos más importantes en CSS, ya que permite aplicar estilos de forma precisa
+          a los elementos HTML de una página web. CSS ofrece una amplia variedad de selectores que permiten apuntar a elementos
+          individuales, grupos de elementos o incluso a partes específicas de un elemento.
+        </p>
+        <br>
+        <p>
+          Los tipos de selectores más comunes son:
+          <ul> 
+						<li><b>Selector por etiqueta:</b> aplica estilos a todos los elementos de un tipo específico. 
+              Este ejemplo cambia el color del texto de todos los párrafos &lt;p&gt; a rojo.</li>
+              <div class="example">
+                <img src="img/css/css4.png"  alt="p { color: red; }"/>
+              </div> 
+						<li><b>Selector por clase:</b> aplica estilos a todos los elementos que comparten una clase.
+              Útil para aplicar estilos a múltiples elementos sin importar su tipo </li>
+              <div class="example">
+                <img src="img/css/css5.png"  alt=".precio { background-color: yellow; }"/>
+              </div>      
+						<li><b>Selector por ID:</b> aplica estilos a un único elemento con un identificador único.</li>
+              <div class="example">
+                <img src="img/css/css5.png" alt="#encabezado { border: 2px solid red; }"/>
+              </div>
+            <li><b>Combinación de selectores:</b> permite seleccionar elementos dentro de otros elementos.
+              Este ejemplo aplica el color verde solo a los párrafos dentro de un elemento con la clase contenedor.</li>
+              <div class="example">
+                <img src="img/css/css7.png"  alt=".contenedor p { color: green; }"/>
+              </div>
+            <li><b>Pseudo-clases y pseudo-elementos:</b> permiten aplicar estilos en situaciones específicas o a partes de un elemento.
+              Aquí, el fondo del enlace cambia cuando el usuario pasa el cursor sobre él.</li>
+              <div class="example">
+                <img src="img/css/css8.png" alt="a:hover { background-color: lightblue; }"/>
+              </div>
+          </ul>
+          La selección de elementos es una parte fundamental en CSS, ya que permite aplicar estilos de forma precisa y controlada a
+          los distintos componentes de una página web. Gracias a la variedad de selectores disponibles, es posible dirigir estilos tanto 
+          a elementos individuales como a grupos completos, según su tipo, clase, ID o posición dentro del documento HTML.
+          En el siguiente apartado, profundizaremos en las propiedades y valores más comunes que se utilizan para definir estilos.
+        </p>   
+      </section>
+      <br> 
+      <section id="Contenido4">
+        <h3>Propiedades y valores en CSS</h3>
+        <p>
+          En CSS, las <b>propiedades</b> son los atributos visuales que queremos modificar en los elementos HTML, como el color del 
+          texto, el tamaño de la fuente, los márgenes o el fondo. Los <b>valores</b> son las opciones que asignamos a esas propiedades
+          para definir cómo se verá el elemento. Cada propiedad acepta un conjunto específico de valores válidos, que determinan el resultado visual final.
+        </p>
+        <br>
+        <p>
+          A continuación, te mostramos algunas de las propiedades más comunes en CSS, junto con ejemplos prácticos:
+        </p>
+        <p>
+          <ul> 
+						<li><b>Color (“color”):</b></li>
+							<ul> 
+								<li><i>Descripción</i>: define el color del texto.</li>
+								<li><i>Valores posibles</i>: nombres de colores (blue), códigos hexadecimales (#ff6347), RGB, HSL, etc.</li>
+						    <li><i>Ejemplo</i>:</li>
+                <div class="example">
+                  <img src="img/css/css9.png" alt=" { color: blue; }"/>
+                </div>
+              </ul>
+						<li><b>Fondo (background):</b></li>
+              <ul>
+								<li><i>Descripción</i>: establece el fondo de un elemento.</li>
+								<li><i>Valores posibles</i>: colores, imágenes, posición, repetición, tamaño, etc.</li>
+						    <li><i>Ejemplo</i>:</li>
+                <div class="example">
+                  <img src="img/css/css10.png" alt=" { background-color: #f2f2f2; }"/>
+                </div>
+              </ul>
+            <li><b>Tamaño de fuente (font-size):</b></li>
+              <ul>
+								<li><i>Descripción</i>: controla el tamaño del texto.</li>
+								<li><i>Valores posibles</i>: unidades como px, em, %, rem, etc.</li>
+						    <li><i>Ejemplo</i>:</li>
+                <div class="example">
+                  <img src="img/css/css11.png" alt=" { font-size: 24px; }"/>
+                </div>
+              </ul>
+            <li><b>Margen (margin):</b></li>
+              <ul>
+								<li><i>Descripción</i>: define el espacio exterior alrededor de un elemento.</li>
+								<li><i>Valores posibles</i>: unidades de medida (px, %, auto, etc.).</li>
+						    <li><i>Ejemplo</i>:</li>
+                <div class="example">
+                  <img src="img/css/css12.png" alt=" { margin: 10px; }"/>
+                </div>
+              </ul>    
+            <li><b>Borde (border):</b></li>
+              <ul>
+								<li><i>Descripción</i>: establece el contorno de un elemento.</li>
+								<li><i>Valores posibles</i>: ancho, estilo (solid, dotted, dashed), color.</li>
+						    <li><i>Ejemplo</i>:</li>
+                <div class="example">
+                  <img src="img/css/css13.png" alt=" { border: 1px solid #ccc; }"/>
+                </div>
+              </ul>   
+            <li><b>Ancho y alto (width, height):</b></li>
+              <ul>
+								<li><i>Descripción</i>: controlan el tamaño del elemento.</li>
+								<li><i>Valores posibles</i>: unidades fijas o relativas (px, %, auto, etc.).</li>
+						    <li><i>Ejemplo</i>:</li>
+                <div class="example">
+                  <img src="img/css/css14.png" alt=" { width: 50%; height: auto; }"/>
+                </div>
+              </ul>           
+          </ul>
+        </p>
+        <p>
+          Dominar las propiedades y sus valores es esencial para diseñar páginas web atractivas, accesibles
+          y funcionales. En el siguiente apartado, exploraremos la diferencia entre los estilos en línea, 
+          internos y externos, y cómo elegir el más adecuado según el contexto.
+        </p>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido5">
+        <h3>Aplicando estilos con CSS: ejemplo práctico</h3>
+        <p>
+          Una de las formas más efectivas de aprender CSS es aplicándolo a un caso real. A continuación, te mostramos 
+          un ejemplo sencillo de cómo diseñar una página HTML para una tienda de zapatillas, utilizando clases CSS para 
+          dar estilo a cada sección del contenido.
+        </p>
+        <p>
+          Primero, creamos la estructura HTML básica de la página, asignando clases a los elementos que deseamos personalizar:
+        </p> 
+        <br>
+        <div class="example">
+          <img src="img/css/css15a.png" alt=" { width: 50%; height: auto; }"/>
+        </div>
+        <br>
+        <p>
+          Ahora, aplicamos estilos personalizados mediante reglas CSS en un archivo externo llamado styles.css:
+        </p>
+        <div class="example">
+          <img src="img/css/css15b.png"  alt="Ejemplo de reglas CSS para producto b"/>
+          <img src="img/css/css15c.png" alt="Ejemplo de reglas CSS para producto c"/>
+        </div>
+        <p>
+          Este ejemplo demuestra cómo separar el contenido (HTML) del diseño (CSS), lo que facilita el mantenimiento
+          y mejora la organización del código. <!--En el siguiente apartado, exploraremos cómo aplicar estilos en línea, 
+          internos y externos, y cuándo conviene usar cada uno.-->
+        </p>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido6">
+        <h3>Cascada y especificidad en CSS</h3>
+        <p>
+          Uno de los conceptos clave para entender cómo se aplican los estilos en CSS es la cascada. Este término hace 
+          referencia al proceso mediante el cual el navegador decide qué reglas de estilo aplicar cuando múltiples declaraciones
+          afectan al mismo elemento y propiedad. CSS evalúa estas reglas siguiendo un orden de prioridad basado en tres factores
+          principales: especificidad, orden e importancia.
+        </p>
+        <p>
+          <ul> 
+						<li><b>Especificidad</b></li>
+            <p>
+              La <b>especificidad</b> determina qué regla tiene más peso cuando varias compiten por el mismo elemento. 
+              Se calcula en función del tipo de selectores utilizados:
+            </p>
+							<ul> 
+								<li>Selectores de ID (#id) tienen más peso que clases (.clase) o etiquetas (div, p).</li>
+								<li>Cuanto más específico sea el selector, mayor será su prioridad.</li>
+						    <li>Por ejemplo, #menu .item tiene más especificidad que .item.</li>
+             </ul>
+            <li><b>Orden de aparición</b></li>
+             <p>
+               Si dos reglas tienen la misma especificidad, se aplicará la que aparezca <b>más abajo</b> en el archivo CSS,
+               ya que CSS lee de arriba hacia abajo.
+            </p>
+            <br>
+            <li><b>Importancia</b></li>
+            <p>
+              La declaración !important puede forzar la aplicación de un estilo, incluso si otra regla tiene mayor especificidad.
+              Sin embargo, debe usarse con precaución, ya que puede dificultar el mantenimiento del código.
+            </p>
+            <div class="example">
+              <img src="img/css/css16.png"  alt="Important"/>
+            </div>
+          </ul>
+         Comprender cómo funciona la cascada y cómo se calcula la especificidad es esencial para escribir estilos eficientes
+         y evitar conflictos inesperados. 
+        </p>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido7">
+        <h3>El Modelo de caja en CSS (Box Model)</h3>
+        <p>
+          El <b>Box Model</b> o <b>Modelo de Caja</b> es un concepto esencial en CSS que describe cómo se estructura visualmente cada elemento HTML
+          en una página web. En CSS, todos los elementos se representan como cajas rectangulares que están compuestas por diferentes 
+          capas que rodean el contenido.
+        </p>
+        <br>
+        <div class="example">
+          <img src="img/css/css17.png" alt="Box model"/>
+        </div>
+        <br>
+        <p><b>Componentes del Box Model:</b></p>
+          <ul>
+				     	<li><b>Contenido (Content):</b> es el área donde se muestra el contenido del elemento, como texto, imágenes o formularios.</li>
+              <li><b>Relleno (Padding):</b> es el espacio entre el contenido y el borde del elemento. Se puede ajustar individualmente con propiedades
+                 como padding-top, padding-right, padding-bottom y padding-left.  </li>
+					    <li><b>Borde (Border):</b> rodea el contenido y el padding. Puede tener diferentes grosores, estilos y colores mediante propiedades como
+                 border-width, border-style y border-color.</li>
+              <li><b>Margen (Margin):</b> Es el espacio exterior que separa el elemento de otros elementos cercanos. También se puede configurar por
+                 lados con margin-top, margin-right, margin-bottom y margin-left.</li>
+				  </ul>
+        <p>
+          Comprender el modelo de caja es fundamental para controlar el diseño y la distribución de los elementos en una página web. Permite ajustar 
+          el espaciado, alinear elementos y evitar solapamientos no deseados. Además, es clave para crear diseños responsivos y bien estructurados.
+        </p>     
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido8">
+        <h3>¿Qué es el modelo Flexbox en CSS?</h3>
+        <p>
+          El <b>Modelo Flexbox</b> (abreviatura de Flexible Box) es una poderosa técnica de diseño introducida en <b>CSS3</b> que permite distribuir
+          y alinear elementos de forma eficiente dentro de un contenedor, incluso cuando su tamaño es dinámico o desconocido. Su principal objetivo
+          es facilitar la creación de <b>diseños flexibles, adaptables y responsivos,</b> superando las limitaciones de los métodos tradicionales
+          basados en flotado (float) o posicionamiento absoluto.
+        </p>
+        <br>
+        <p>
+          Flexbox organiza los elementos en una <b>dirección principal</b> (horizontal o vertical) y permite controlar su alineación, distribución
+          del espacio, orden visual y comportamiento en diferentes tamaños de pantalla. Esto lo convierte en una herramienta ideal para construir
+          interfaces modernas, como menús de navegación, galerías de productos, tarjetas, formularios y mucho más.
+        </p>
+        <br>
+        <p> 
+          Gracias a propiedades como display: flex, justify-content, align-items y flex-wrap, los desarrolladores pueden lograr diseños complejos con
+          menos código y mayor control visual.
+          </p>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido9">
+        <h3>Imágenes y fondos en CSS</h3>
+        <p>
+          CSS ofrece múltiples formas de trabajar con imágenes, ya sea como contenido visual o como parte del diseño de fondo de un elemento. 
+          Estas herramientas permiten crear interfaces más atractivas, dinámicas y personalizadas.
+        </p>
+        <br>
+        <p><b>Imágenes como fondo</b></p>
+        <p>Puedes usar imágenes como fondo de cualquier elemento HTML utilizando la propiedad background-image. Por ejemplo:</p>
+        <div class="example">
+          <img src="img/css/css18.png" alt="background-image ejemplo"/>
+        </div>
+        <ul> 
+					<li><b>background-size: cover</b> hace que la imagen cubra todo el contenedor.</li>
+          <li><b>background-position: center center</b> centra la imagen tanto horizontal como verticalmente.</li>
+        </ul>
+        <p><b>Propiedades para imágenes</b></p>
+        <ul> 
+					<li><b>object-fit:</b> controla cómo se ajusta una imagen dentro de su contenedor. Valores comunes: cover, contain, fill.</li>
+          <li><b>width y height:</b> definen el tamaño de la imagen en unidades como px, %, em, etc.</li>
+          <div class="example">
+            <img src="img/css/css19.png" alt="width-height ejemplo"/>
+          </div>
+        </ul>
+        <p><b>Fondos en CSS</b></p>
+        <ul> 
+					<li><b>background-color:</b> establece un color de fondo.</li>
+          <div class="example">
+            <img src="img/css/css20.png" alt="color de fondo ejemplo"/>
+          </div>
+          <li><b>background-repeat:</b> controla si la imagen se repite.</li>
+          <div class="example">
+            <img src="img/css/css21.png" alt="fondo repetido ejemplo"/>
+          </div>
+          <li><b>background-attachment:</b> define si el fondo se desplaza con el contenido o permanece fijo.</li>
+          <div class="example">
+            <img src="img/css/css22.png" alt="fondo desplaza o fijo ejemplo"/>
+          </div>
+        </ul>
+        <p><b>Fondos con gradientes</b></p>
+        <p>CSS también permite crear fondos con transiciones de color suaves usando gradientes:</p>
+        <div class="example">
+          <img src="img/css/css23.png" alt="gradiente fondo ejemplo"/>
+        </div>
+        <p>Este enfoque es ideal para crear efectos visuales modernos sin necesidad de imágenes externas.</p>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido10">
+        <h3>Tipografía y colores en CSS</h3>
+        <p>
+          La tipografía y los colores son elementos fundamentales en el diseño web, ya que influyen directamente en la estética,
+          la legibilidad y la experiencia del usuario. CSS proporciona un conjunto de propiedades que permiten personalizar el 
+          texto y su presentación de forma precisa y adaptable.
+        </p>
+        <br>
+        <p><b>Configuración de la Tipografía</b></p>
+        <ul> 
+					<li><b>Familias de fuentes:</b> puedes definir una lista de fuentes para tus elementos. Si la primera no está disponible en el sistema del usuario,
+           se usará la siguiente.</li>
+          <div class="example">
+            <img src="img/css/css24.png" alt="familia fuentes ejemplo"/>
+          </div>
+          <li><b>Tamaño de fuente:</b> controla el tamaño del texto con unidades como px, em, % o rem.</li>
+          <div class="example">
+            <img src="img/css/css25.png" alt="tamaño fuentes ejemplo"/>
+          </div>
+          <li><b>Peso de la fuente:</b> define el grosor del texto.</li>
+          <div class="example">
+            <img src="img/css/css26.png" alt="peso fuentes ejemplo"/>
+          </div>
+          <li><b>Estilo de la fuente: </b> aplica estilos como cursiva o inclinada.</li>
+          <div class="example">
+            <img src="img/css/css27.png" alt="estilo fuentes ejemplo"/>
+          </div>
+          <li><b>Unidades relativas:</b> usar em o rem permite que el diseño se adapte mejor a diferentes dispositivos.</li>
+          <div class="example">
+            <img src="img/css/css28.png" alt="unidades relativas ejemplo"/>
+          </div>
+          <li><b>Importar fuentes externas:</b> puedes usar servicios como Google Fonts para mejorar la estética tipográfica.</li>          
+          <div class="example">
+            <img src="img/css/css29.png" alt="importar fuentes ejemplo"/>
+          </div>
+        </ul>
+        <p><b>Aplicación de Colores</b></p>
+        <ul> 
+					<li><b>Color del texto:</b></li>
+          <div class="example">
+            <img src="img/css/css30.png" alt="color de text ejemplo"/>
+          </div>
+          <li><b>Color de fondo del texto:</b></li>          
+          <div class="example">
+            <img src="img/css/css31.png" alt="color de fondo texto ejemplo"/>
+          </div>
+        </ul>
+        <p>
+          CSS permite definir colores mediante nombres (red, blue), códigos hexadecimales (#ff0000), valores RGB (rgb(255, 0, 0)) 
+          o HSL (hsl(0, 100%, 50%)). Una buena combinación de tipografía y color no solo mejora la estética, sino también la accesibilidad
+          y la identidad visual del sitio.
+        </p>
+      </section>
+      <br> <!--espacio -->
+      <section id="ContenidoExterno">
+        <h3>Para más información:</h3>
+        <ul>
+          <li><a href="https://www.w3schools.com/" target="_blank">W3Schools: Tutorial CSS</a></li>
+          <li><a href="https://hackernoon.com/a-beginners-guide-to-html-css-and-javascript" target="_blank">Guía para principiantes HTML CSS y Javascript</a></li>
+        </ul>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/iwFEc6I8wSA?si=pCzmzfF7C3eZg_z4"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </section>
+    </div>
+  </div>
+</section>

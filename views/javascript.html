@@ -1,0 +1,278 @@
+<section class="section" id="javascript">
+  <div class="container">
+    <!-- Menú lateral -->
+    <nav id="menu-lateral">
+      <h2 id="menu-lateral-titulo">JavaScript</h2>
+      <ul>
+        <br>
+        <li><a href="#Intro">Introducción a JavaScript</a></li>
+        <li><a href="#Contenido1">Sintaxis básica</a></li>
+        <li><a href="#Contenido2">Funciones en JavaScript</a></li>
+        <li><a href="#Contenido3">Eventos y Manipulación del DOM</a></li>
+        <li><a href="#Contenido4">Integración con HTML y CSS</a></li>
+        <li><a href="#ContenidoExterno">Más información y recursos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div id="contenido">
+      <section id="Intro">
+        <h3>Introducción a JavaScript</h3>
+        <p>
+          <b>JavaScript</b> es un lenguaje de programación de alto nivel, interpretado, dinámico y multiplataforma, ampliamente utilizado en el desarrollo web. 
+          Fue creado en 1995 por <b>Brendan Eich</b> mientras trabajaba en Netscape Communications, con el propósito de dotar a los navegadores de la 
+          capacidad de ejecutar scripts directamente en el cliente, es decir, en el navegador del usuario.
+        </p>
+        <br>
+        <p>
+          Desde entonces, JavaScript ha evolucionado hasta convertirse en uno de los lenguajes más populares del mundo. Su principal ventaja es que está 
+          integrado en todos los navegadores modernos, lo que lo convierte en una herramienta esencial para crear <b>páginas web interactivas y dinámicas</b>.
+        </p>
+        <br>
+        <p>
+          Con JavaScript, los desarrolladores pueden hacer que los elementos de una página respondan a acciones del usuario, como clics, desplazamientos, 
+          validación de formularios, animaciones, y mucho más. Además, permite manipular el DOM (Document Object Model), lo que facilita la actualización 
+          del contenido sin recargar la página.
+        </p>
+        <br>
+        <p>
+          JavaScript no se limita al desarrollo del lado del cliente. Gracias a <b>Node.js</b>, una plataforma basada en el motor V8 de Google Chrome, también 
+          puede ejecutarse en el servidor. Esto ha permitido a los desarrolladores construir aplicaciones completas (frontend y backend) utilizando un 
+          solo lenguaje, lo que ha impulsado aún más su adopción.
+        </p>
+        <br>
+        <p>
+          Hoy en día, JavaScript es la base de tecnologías modernas como <b>Single Page Applications (SPAs)</b>, <b>Progressive Web Apps (PWAs)</b> y frameworks
+          populares como <b>React</b>, <b>Vue</b> y <b>Angular</b>. Su versatilidad, comunidad activa y constante evolución lo convierten en una pieza clave
+          del ecosistema web.
+        </p>
+        <br>
+        <div class="example"> 
+        <img src="img/js/js1.png" alt="JS contenido"/>
+        </div>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido1">
+        <h3>Sintaxis básica de JavaScript</h3>
+        <p> 
+          Comprender la <b>sintaxis básica de JavaScript</b> es el primer paso para comenzar a programar en este lenguaje. JavaScript es flexible,
+          fácil de aprender y muy poderoso, lo que lo convierte en una excelente opción para principiantes y desarrolladores avanzados.
+         </p>
+        <br>
+        <h4>1. Variables y tipos de datos</h4>
+        <p>
+          JavaScript es un lenguaje de <b>tipado dinámico</b>, lo que significa que no necesitas declarar el tipo de dato al crear una variable.
+          Puedes usar var, let o const para declarar variables:
+        </p>
+        <div class="example"> 
+          <img src="img/js/js2.png" alt="let nombre ejemplo"/>
+        </div>
+        <br>
+        <p> 
+         Los tipos de datos incluyen:
+        </p>
+        <ul style="padding-left: 2em;">
+          <li>Números (42)</li>
+          <li>Cadenas de texto ("Hola")</li>
+          <li>Booleanos (true, false)</li>
+          <li>Objetos, arrays, funciones, null, undefined, entre otros.</li>
+        </ul>       
+        <h4>2. Operadores</h4>
+        <p>JavaScript incluye operadores para realizar cálculos y comparaciones:</p>
+        <ul style="padding-left: 2em;">
+          <li><b>Aritméticos: </b>+, -, *, /, %</li>
+          <li><b>Asignación: </b>=, +=, -=, *=</li>
+          <li><b>Comparación: </b>==, ===, !=, <, >=</li>
+          <li><b>Lógicos: </b>&&, ||, !</li>
+        </ul>       
+        <h4>3. Estructuras de Control</h4>
+        <p>Permiten ejecutar código condicionalmente o de forma repetitiva:</p>
+        <div class="example"> 
+          <img src="img/js/js3.png" alt="estructuras de control ejemplo"/>
+        </div>
+        <p>También puedes usar bucles como for, while y do...while.</p>
+        <br>
+        <h4>4. Funciones</h4>
+        <p>Las funciones encapsulan bloques de código reutilizable:</p>
+        <div class="example"> 
+          <img src="img/js/js4.png" alt="funciones ejemplo"/>
+        </div>
+        <br>
+        <h4>5. Objetos y Arrays</h4>
+        <p>JavaScript incluye operadores para realizar cálculos y comparaciones:</p>
+        <ul style="padding-left: 2em;">
+          <li><b>Objetos: </b>agrupan datos en pares clave-valor.</li>
+          <li><b>Arrays: </b>almacenan listas de valores</li>
+        </ul>
+        <div class="example"> 
+          <img src="img/js/js5.png" alt="objetos y arrays ejemplo"/>
+        </div>
+        <br>
+        <h4>6. Comentarios</h4>
+        <p>JavaScript incluye operadores para realizar cálculos y comparaciones:</p>
+        <ul style="padding-left: 2em;">
+          <li>Una línea: // Esto es un comentario.</li>
+          <li>Varias líneas:</li>
+          <div class="example"> 
+            <img src="img/js/js6.png" alt="comentarios ejemplo>"/>
+          </div>
+        </ul>
+        <h4>7. Ámbito y Contexto</h4>
+        <p>
+          JavaScript tiene <b>ámbito de función</b> y el valor de esto depende del contexto
+          de ejecución, lo cual es clave para entender cómo se comportan las funciones y objetos.
+        </p>
+       <br>
+       <h4>8. Manipulación de Cadenas y Arrays</h4>
+        <p>
+          JavaScript ofrece métodos útiles como split(), join(), slice(), concat(), entre otros, para trabajar con texto y listas de datos.
+        </p>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido2">
+        <h3>Funciones en JavaScript</h3>
+        <p>
+          Las funciones son uno de los pilares fundamentales de JavaScript. Permiten encapsular bloques de código que pueden reutilizarse
+          en diferentes partes de un programa, lo que mejora la organización, legibilidad y mantenimiento del código. Gracias a las funciones,
+          es posible dividir tareas complejas en partes más pequeñas y manejables.
+        </p>
+        <br>
+        <h4>1. Declaración de funciones</h4>
+        <p>
+          En JavaScript, existen varias formas de declarar funciones. La más común es mediante la palabra clave function, seguida del 
+          nombre de la función y paréntesis que pueden contener parámetros:
+        </p>
+        <div class="example"> 
+          <img src="img/js/js7.png" alt="función hola ejemplo"/>
+        </div>
+        <p>
+          También se pueden declarar funciones utilizando expresiones de función o funciones flecha (arrow functions), introducidas 
+          en ES6, que ofrecen una sintaxis más concisa.
+        </p>
+        <br>
+        <h4>2. Llamada de funciones</h4>
+        <p>
+          Para ejecutar una función, simplemente se invoca por su nombre y se le pasan los argumentos necesarios (si los hay):
+        </p>
+        <div class="example"> 
+          <img src="img/js/js8.png" alt="llamado función saludar ejemplo"/>
+        </div>
+        <br>
+        <h4>3. Parámetros y argumentos</h4>
+        <p>
+          Los <b>parámetros</b> son variables que se definen en la declaración de la función y actúan como marcadores de posición. 
+          Los <b>argumentos</b> son los valores reales que se pasan a la función cuando se llama. En el ejemplo anterior, <code>nombre</code> es 
+          un parámetro, y <code>"Juan"</code> es el argumento.
+        </p>
+        <br>
+        <h4>4. Valor de retorno</h4>
+        <p>
+          Las funciones pueden devolver un valor utilizando la palabra clave <code>return</code>. Este valor puede ser almacenado en una
+          variable o utilizado directamente:
+        </p>
+        <div class="example"> 
+          <img src="img/js/js9.png" alt="función retorno ejemplo"/>
+        </div>
+        <p>
+          El uso adecuado de funciones permite escribir código más limpio, modular y fácil de depurar. Son esenciales tanto en 
+          programación estructurada como en programación orientada a objetos y funcional.
+        </p>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido3">
+        <h3>Eventos y manipulación del DOM en JavaScript</h3>
+        <p>
+          En el desarrollo web moderno, <b>JavaScript</b> juega un papel esencial al permitir la interacción dinámica entre el usuario y la página web.
+           Dos conceptos clave en este proceso son los <b>eventos</b> y la <b>manipulación del DOM (Document Object Model)</b>.
+        </p>
+        <br>
+        <h4>1. ¿Qué son los eventos?</h4>
+        <p>
+          Los eventos son acciones o sucesos que ocurren en el navegador, como hacer clic en un botón, mover el cursor, escribir en un campo de texto,
+          enviar un formulario o cargar una página. JavaScript permite detectar estos eventos y responder a ellos mediante funciones llamadas
+          <b>manejadores de eventos</b>.      
+        </p>
+        <p>
+          Para escuchar un evento, se utiliza el método <code>addEventListener()</code>, que se aplica directamente a los elementos del DOM. Por ejemplo:     
+        </p>
+        <div class="example"> 
+          <img src="img/js/js10.png" alt="evento addEventLIstenre () ejemplo"/>
+        </div>
+        <p>
+          Este enfoque permite separar la lógica del comportamiento del HTML, promoviendo un código más limpio y mantenible.     
+        </p>
+        <br>
+        <h4>2. Manipulación del DOM</h4>
+        <p>
+          El <b>DOM</b> es una representación estructurada del documento HTML en forma de árbol, donde cada nodo representa un elemento,
+          atributo o texto. JavaScript puede acceder a este árbol para modificar dinámicamente el contenido, el estilo y la estructura de la página.
+        </p>
+        <p>
+          Por ejemplo, puedes cambiar el texto de un elemento así:
+        </p>
+        <div class="example"> 
+          <img src="img/js/js11.png" alt="cambio texto ejemplo"/>
+        </div>
+        <p>
+          También puedes crear, eliminar o mover elementos, cambiar clases CSS, o incluso responder a eventos en tiempo real. Esta capacidad de
+          modificar el DOM es lo que hace posible crear experiencias interactivas y personalizadas para los usuarios.
+        </p>
+      </section>
+      <br> <!--espacio -->
+      <section id="Contenido4">
+        <h3>Integración de JavaScript con HTML y CSS</h3>
+        <p>
+          La integración de <b>JavaScript</b> con <b>HTML</b> y <b>CSS</b> es fundamental para el desarrollo de aplicaciones web modernas. 
+          Esta combinación permite crear interfaces dinámicas, interactivas y altamente personalizables, mejorando significativamente
+          la experiencia del usuario.
+        </p>
+        <br>
+        <h4>1. Acceso a elementos HTML</h4>
+        <p>
+          JavaScript proporciona múltiples métodos para acceder a los elementos del documento HTML, lo que permite manipularlos de forma precisa:
+        </p>
+        <ul style="padding-left: 2em;">
+          <li><code>document.getElementById(id)</code> : selecciona un elemento por su atributo <code>id</code>.</li>
+          <li><code>document.getElementsByClassName(className)</code> devuelve una colección de elementos con una clase específica.</li>
+          <li><code>document.getElementsByTagName(tagName)</code> : selecciona todos los elementos con una etiqueta determinada.</li>
+          <li><code>document.querySelector(selector)</code> : devuelve el primer elemento que coincida con un selector CSS.</li>
+          <li><code>document.querySelectorAll(selector)</code> : devuelve todos los elementos que coincidan con un selector CSS.</li>
+        </ul>
+        <p>
+          Estos métodos permiten seleccionar elementos de forma eficiente, ya sea individualmente o en grupo, para aplicar cambios dinámicos.
+        </p>
+        <br>
+        <h4>2. Modificación de estilos CSS</h4>
+        <p>
+          JavaScript también permite cambiar los estilos visuales de los elementos HTML directamente desde el código.
+          Esto se logra accediendo a la propiedad <code>style</code> del elemento:
+        </p>
+        <div class="example"> 
+          <img src="img/js/js12.png" alt="cambio style ejemplo"/>
+        </div>
+        <p>
+          Además, se pueden añadir o eliminar clases CSS dinámicamente con <code>classList.add()</code> o <code>classList.remove()</code>, 
+          lo que facilita la creación de efectos visuales, animaciones o respuestas a eventos del usuario.
+        </p>
+      </section>
+      <br>
+      <section id="ContenidoExterno">
+        <h3>Para más información:</h3>
+        <p>
+          Si deseas seguir aprendiendo y profundizando en el lenguaje JavaScript, aquí encontrarás contenido adicional, enlaces útiles,
+          referencias y materiales que te ayudarán a avanzar en tu camino como desarrollador web.
+        </p>
+        <ul>
+          <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">W3Schools: Tutorial JS</a></li>
+          <li><a href="https://aprendejavascript.org/" target="_blank">Píldoras sobre partes específicas de JS</a></li>
+        </ul>
+         <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/ivdTnPl1ND0?si=UpbOyAfLwK0YP0Jm"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </section>
+    </div>
+  </div>
+</section>

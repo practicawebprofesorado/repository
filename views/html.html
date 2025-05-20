@@ -1,0 +1,297 @@
+<section class="section" id="html">
+  <div class="container">
+    <!-- Menú lateral -->
+    <nav id="menu-lateral">
+      <h2>HTML</h2>
+      <ul>
+        <br>
+        <li><a href="#Intro">Introducción a HTML</a></li>
+        <li><a href="#Contenido1">Etiquetas HTML</a></li>
+        <li><a href="#Contenido2">Estructura básica</a></li>
+        <li><a href="#Contenido3">Comandos básicos</a></li>
+        <li><a href="#Contenido4">Otras funcionalidades</a></li>
+        <li><a href="#ContenidoExterno">Más información y recursos</a></li>
+      </ul>
+    </nav>
+    <!-- Contenido principal -->
+    <div id="contenido">
+      <section id="Intro">
+        <h3>Introducción a HTML</h3>
+          <p>HTML significa <strong>HyperText Markup Language</strong>, que en español quiere decir "Lenguaje de Marcado de Hipertexto". 
+             Es el lenguaje que usamos para crear páginas web. Con HTML puedes definir el contenido de una página como textos, 
+             imágenes, enlaces, listas, formularios y mucho más. Todo lo necesario para crear todo tipo de páginas: blogs, tiendas online, 
+             portafolios, webs de noticias, etc. Puedes probar páginas HTML en tu ordenador sin conexión a internet, solo necesitas un editor de texto y un navegador para crear un archivo
+            .html y abrirlo directamente.</p>
+          <br><!--espacio -->
+        <h4>¿Cuál es la diferencia entre HTML, CSS y JS?</h4>
+          <p>Imagina que estás haciendo un robot:</p>
+           <ul>
+              <li><strong>HTML</strong> es el esqueleto del robot. Dice qué partes tiene: cabeza, brazos, piernas, ojos, etc. 
+              Es la estructura de todo.</li>
+              <li><strong>CSS</strong> es el diseño del robot. Decide de qué color son los ojos, si la cabeza es grande o pequeña, 
+              si lleva ropa roja o azul. Es el aspecto visual.</li>
+              <li><strong>JavaScript</strong> es el cerebro o los movimientos del robot. 
+              Gracias a él, el robot puede caminar, hablar, reaccionar cuando le das una orden. Es lo que le da comportamiento, lo que hace 
+              que “haga cosas”.</li> 
+            </ul>
+            <div class="example">
+              <img src="img/html/html1.png" alt="Diferencia entre HTML, CSS y JS">
+            </div>
+      </section>
+      <br>
+      <section id="Contenido1"> <!-- Etiquetas HTML -->
+        <h3>Etiquetas HTML</h3>
+          <p>Una etiqueta en HTML son comandos que usamos para decirle al navegador cómo mostrar el contenido y las diferentes partes del documento.</p>
+          <p>Son como instrucciones que marcan cada parte del documento. Hay dos tipos principales:</p><br>
+        <h4>1. Tipos de etiquetas</h4> <!-- Listado etiquetas -->
+          <ul> 
+            <li><strong>Etiquetas con apertura y cierre:</strong></li>
+                <p>Tienen una etiqueta de apertura y otra de cierre, y definen un bloque de contenido. Ejemplo:</p>
+                <p><h1></h1><code>&lt;h1&gt;Este es un Título Principal&lt;/h1&gt;</code></p>
+                <p><h2></h2><code>&lt;h2&gt;Este es un Subtítulo&lt;/h2&gt;</code></p>
+                <p><p></p><code>&lt;p&gt;Este es un párrafo&lt;/p&gt;</code></p>
+                <p><strong><strong></strong><code>&lt;strong&gt;Este texto es importante (negrita)&lt;/strong&gt;</strong></code></p>
+                <p><em><em></em><code>&lt;em&gt;Este texto está enfatizado (cursiva)&lt;/em&gt;</code></p></em>
+            </li>
+            <br>
+            <li><strong>Etiquetas de auto-cierre o autocontenidas:</strong></li>
+              <p>Son etiquetas que no tienen una etiqueta de cierre correspondiente. Se utilizan para elementos que no contienen contenido, 
+                como imágenes o saltos de línea. Ejemplo:</p><br>
+                </strong> <code>&lt;img src="foto.jpg" alt="Descripción imagen"&gt;</code>
+                <p><code>&lt;img src="logo.png" alt="muestra imagen logotipo"&gt;</code></p>
+                <p><code>&lt;input type="text" name="nombre" placeholder="Escribe tu nombre aquí"&gt;</code></p>
+            </li>
+          </ul>
+          <p><!-- Anidación etiquetas -->
+            Además, las etiquetas pueden anidarse unas dentro de otras para definir relaciones padre-hijo en el documento. En este caso, 
+            la etiqueta interna debe cerrarse antes de la etiqueta externa.
+          </p>
+            <div class="example">
+              <img src="img/html/html2.png" alt="Etiquetas anidadas">	    
+            </div>  
+          <br>
+          <p>En este ejemplo, la etiqueta "head" contiene dentro otra etiqueta, como "title".</p>
+          <p>Igual que pasa con "body", que contiene etiquetas como &lt;div&gt; y &lt;script&gt;. Por eso, decimos que: </p> 
+          <ul>
+              <li><p>La etiqueta &lt;body&gt; es como el "padre" de las etiquetas &lt;div&gt;  &lt;script&gt;.</p></li>
+              <li><p>Las etiquetas &lt;div&gt; y &lt;script&gt; son "hijas" de &lt;body&gt;.</p></li>
+              <li><p>Las etiquetas &lt;div&gt; y &lt;script&gt; actuarian como "hermanas" porque están al mismo nivel dentro de  &lt;body&gt;.</p></li>
+          </ul>
+          <p>También puedes observar que las etiquetas hijas están un poco más hacia dentro del código (con sangría).
+             Esto se hace siguiendo una regla que usan todos los programadores para escribir el código de forma ordenada.
+             Así, cuando el código crece o cuando alguien más lo lee, es más fácil entenderlo y trabajar con él.</p>
+        <br>     
+        <h4>2. Atributos de etiquetas</h4> <!-- Atributos etiquetas -->
+          <p>Las etiquetas pueden llevar <strong>atributos</strong>, que añaden información extra. 
+            Los atributos se colocan dentro de la etiqueta de apertura y se utilizan para configurar propiedades específicas del elemento. 
+            Ejemplo:</p><br>
+            <pre><code>&lt;a href="https://www.google.com"&gt;Ir a Google&lt;/a&gt;</code></pre>
+            <ul>
+              <li><strong><a href="http://www.google.com"></a> &lt;a&gt;</a>:</strong> define un enlace.</li>
+              <li><strong>href:</strong> atributo que especifica el destino.</li>
+            </ul>
+        <h4>3. Comentarios</h4> <!-- Comentarios -->    
+          <p>Los comentarios son útiles para agregar notas o aclaraciones en el código sin afectar la visualización de la página. 
+            Los comentarios en HTML se escriben así: </p><br>
+              <p><code>&lt;!-- Este es un comentario y no se mostrará en la página --&gt;</code></p>
+      </section>
+      <br>
+      <section id="Contenido2"> <!--Estructura básica WEB-->
+        <h3>Estructura básica de una página WEB</h3>
+        <p>Una página HTML sigue una estructura estándar que incluye varios elementos esenciales para definir el contenido y la configuración de la página.</p>
+          <pre><code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+            &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;title&gt;Mi página&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+              &lt;p&gt;Este es mi primer sitio web.&lt;/p&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
+          </code></pre>
+      </section>
+      <section id="Contenido3"> <!--Comándos básicos-->
+        <h3>Comandos básicos</h3>
+          <br>
+          <h4>1. Etiquetas básicas</h4>
+          <br>
+            <table> <!--Tabla etiquetas -->
+              <thead>
+                <tr>
+                  <th>Etiqueta</th>
+                  <th>Apertura/Cierre</th>
+                  <th>Función</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>&lt;!DOCTYPE html&gt;</td><td>Solo apertura</td><td>Aunque no es una etiqueta como tal, debe ser la primera línea del archivo HTML. Indica al navegador que use el modo estándar de HTML5 (la versión más actual)</td></tr>
+                <tr><td>&lt;html lang="es"&gt;</td><td>&lt;html&gt; ... &lt;/html&gt;</td><td>Es el elemento raíz de todo documento HTML. Contiene el resto de las etiquetas de la página y suele incluir el atributo <code>&lt;lang&gt;</code> para indicar el idioma del contenido.</td></tr>
+                <tr><td>&lt;head&gt;</td><td>&lt;head&gt; ... &lt;/head&gt;</td><td>Contiene metadatos e información sobre el documento, como el título, codificación de caracteres, enlaces a hojas de estilo o scripts. Su contenido no se muestra directamente en la página.</td></tr>
+                <tr><td>&lt;title&gt;</td><td>&lt;title&gt; ... &lt;/title&gt;</td><td>Define el texto que aparece en la pestaña del navegador cuando se carga la página.</td></tr>
+                <tr><td>&lt;body&gt;</td><td>&lt;body&gt; ... &lt;/body&gt;</td><td>Alberga todo el contenido visible para el usuario en la página web: textos, imágenes, botones, enlaces, etc.</td></tr>
+                <tr><td>&lt;h1&gt; ... &lt;h6&gt;</td><td>&lt;h1&gt; ... &lt;/h1&gt;</td><td>Son encabezados o títulos jerárquicos. <code>&lt;h1&gt;</code> representa el título principal y <code>&lt;h6&gt;</code> el de menor nivel. Se usan para estructurar y organizar el contenido.</td></tr>
+                <tr><td>&lt;p&gt;</td><td>&lt;p&gt; ... &lt;/p&gt;</td><td>Define un párrafo de texto. Es una de las etiquetas más comunes para mostrar información escrita.</td></tr>
+                <tr><td>&lt;img&gt;</td><td>Solo apertura (autocierre)</td><td>Muestra una imagen en la página. Usa atributos como <code>&lt;src&gt;</code> (fuente) y <code>&lt;alt&gt;</code> (texto alternativo).</td></tr>
+                <tr><td>&lt;a&gt;</td><td>&lt;a&gt; ... &lt;/a&gt;</td><td>Crea un hipervínculo que puede dirigir al usuario a otra página web, documento, sección interna o incluso iniciar descargas.</td></tr>
+                <tr><td>&lt;div&gt;</td><td>&lt;div&gt; ... &lt;/div&gt;</td><td>Contenedor genérico en bloque que se usa para agrupar elementos y aplicar estilos o scripts.</td></tr>
+                <tr><td>&lt;span&gt;</td><td>&lt;span&gt; ... &lt;/span&gt;</td><td>Contenedor genérico en línea. A diferencia del <code>&lt;div&gt;</code>, no rompe el flujo del texto y se usa para aplicar estilos a partes específicas del contenido.</td></tr>
+                <tr><td>&lt;ul&gt;</td><td>&lt;ul&gt; ... &lt;/ul&gt;</td><td>Lista desordenada. Muestra elementos con viñetas. Debe contener elementos <code>&lt;li&gt;</code>.</td></tr>
+                <tr><td>&lt;ol&gt;</td><td>&lt;ol&gt; ... &lt;/ol&gt;</td><td>Lista ordenada. Muestra los elementos numerados o con letras. También usa <code>&lt;li&gt;</code>.</td></tr>
+                <tr><td>&lt;li&gt;</td><td>&lt;li&gt; ... &lt;/li&gt;</td><td>Elemento de lista. Se utiliza dentro de <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code>.</td></tr>
+                <tr><td>&lt;header&gt;</td><td>&lt;header&gt; ... &lt;/header&gt;</td><td>Define la cabecera de una página o sección. Suele contener el logo, título y menú de navegación.</td></tr>
+                <tr><td>&lt;footer&gt;</td><td>&lt;footer&gt; ... &lt;/footer&gt;</td><td>Define el pie de página. Normalmente contiene información de contacto, derechos de autor o enlaces secundarios.</td></tr>
+                <tr><td>&lt;main&gt;</td><td>&lt;main&gt; ... &lt;/main&gt;</td><td>Contiene el contenido principal del documento. No debe repetirse y excluye barras laterales o menús.</td></tr>
+                <tr><td>&lt;nav&gt;</td><td>&lt;nav&gt; ... &lt;/nav&gt;</td><td>Define una sección que contiene enlaces de navegación, como menús o barras laterales.</td></tr>
+                <tr><td>&lt;section&gt;</td><td>&lt;section&gt; ... &lt;/section&gt;</td><td>Representa una sección temática o funcional del contenido. Se suele usar para dividir grandes bloques de contenido relacionados.</td></tr>
+                <tr><td>&lt;article&gt;</td><td>&lt;article&gt; ... &lt;/article&gt;</td><td>Representa contenido independiente y reutilizable, como una noticia, entrada de blog o comentario.</td></tr>
+                <tr><td>&lt;aside&gt;</td><td>&lt;aside&gt; ... &lt;/aside&gt;</td><td>Define contenido relacionado pero secundario, como una barra lateral, anuncios o enlaces relacionados.</td></tr>
+              </tbody>
+            </table>
+          <br>
+          <h4>2. Atributos comunes</h4>
+            <p>Estos son algunos atributos muy utilizados:</p><br>
+               <table><!--Tabla atributos -->
+                <thead>
+                  <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>href</td>
+                    <td>Se usa en enlaces para indicar a qué dirección se dirigirá el usuario al hacer clic.</td>
+                    <td><code>&lt;a href="https://ejemplo.com"&gt;Ir al sitio&lt;/a&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>src</td>
+                    <td>Ruta del archivo que se quiere mostrar, por ejemplo una imagen, un video o un script.</td>
+                    <td><code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>alt</td>
+                    <td>Texto que describe la imagen si esta no se puede mostrar. Mejora la accesibilidad.</td>
+                    <td><code>&lt;img src="gato.jpg" alt="Gato durmiendo"&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>id</td>
+                    <td>Identificador único para un elemento. Se usa para estilos CSS o acceso desde JavaScript.</td>
+                    <td><code>&lt;div id="contenido"&gt;&lt;/div&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>class</td>
+                    <td>Permite agrupar elementos que comparten estilo o función. Se puede usar varias veces.</td>
+                    <td><code>&lt;p class="importante"&gt;Texto destacado&lt;/p&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>target</td>
+                    <td>Determina dónde se abrirá un enlace. <code>_blank</code> abre en una nueva pestaña.</td>
+                    <td><code>&lt;a href="pagina.html" target="_blank"&gt;Ver más&lt;/a&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>style</td>
+                    <td>Permite aplicar estilos CSS directamente en la etiqueta (no recomendado para estilos complejos).</td>
+                    <td><code>&lt;p style="color: blue;"&gt;Texto azul&lt;/p&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>title</td>
+                    <td>Muestra un mensaje emergente (tooltip) cuando el usuario pasa el ratón por encima.</td>
+                    <td><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>type</td>
+                    <td>Define el tipo de entrada o contenido. Es muy usado en formularios (text, password, submit...).</td>
+                    <td><code>&lt;input type="password"&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>value</td>
+                    <td>Especifica el valor por defecto de un input, botón, o campo de formulario.</td>
+                    <td><code>&lt;input type="text" value="Juan"&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>name</td>
+                    <td>Asigna un nombre al elemento para identificarlo al enviar un formulario.</td>
+                    <td><code>&lt;input type="email" name="correo"&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>placeholder</td>
+                    <td>Muestra un texto dentro del campo de entrada como ejemplo hasta que el usuario escriba.</td>
+                    <td><code>&lt;input type="text" placeholder="Escribe tu nombre"&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>disabled</td>
+                    <td>Desactiva un elemento del formulario para que no se pueda usar ni editar.</td>
+                    <td><code>&lt;button disabled&gt;No disponible&lt;/button&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>checked</td>
+                    <td>Hace que una casilla o radio aparezca seleccionada por defecto.</td>
+                    <td><code>&lt;input type="checkbox" checked&gt; Acepto&lt;/input&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>readonly</td>
+                    <td>Hace que un campo de formulario se vea, pero no se pueda modificar.</td>
+                    <td><code>&lt;input type="text" value="Solo lectura" readonly&gt;</code></td>
+                  </tr>
+                  <tr>
+                    <td>maxlength</td>
+                    <td>Define el número máximo de caracteres que se pueden escribir en un campo de texto.</td>
+                    <td><code>&lt;input type="text" maxlength="10"&gt;</code></td>
+                  </tr>
+                </tbody>
+              </table>
+      </section>
+      <br>
+      <section id="Contenido4"> <!--Otras funcionalidades-->
+        <h3>Otras funcionalidades útiles</h3>
+        <ul>
+          <li><strong>Formularios:</strong> permiten a los usuarios introducir datos como nombres, correos, contraseñas, opiniones, etc. 
+            Estos datos pueden ser enviados a un servidor para ser procesados.</li><br>
+          <li><strong>Tablas:</strong> sirven para presentar información organizada, como horarios, precios, resultados, etc. 
+            Están compuestas por filas (<code>&lt;tr&gt;</code>) y columnas (<code>&lt;td&gt;</code>). 
+            Por ejemplo, las tablas de etiquetas y atributos de esta página están hechas con este código.</li><br>
+          <li><strong>Listas ordenadas y desordenadas:</strong> se usan para mostrar pasos, elementos o ideas. Las ordenadas 
+            (<code>&lt;ol&gt;</code>) se numeran automáticamente, y las desordenadas (<code>&lt;ul&gt;</code>) usan viñetas. 
+            Por ejemplo, este listado de otras funcionalidades está hecho con el código de lista desordenada.</li><br>
+          <li><strong>Buenas prácticas:</strong> escribir código limpio y ordenado es fundamental. Algunas recomendaciones son:
+            <ul>
+              <li>Usar sangrías para mostrar la estructura jerárquica del código.</li>
+              <li>Escribir comentarios con <code>&lt;!-- comentario --&gt;</code> para explicar partes del código.</li>
+              <li>Nombrar los <code>id</code> y <code>class</code> de forma clara y coherente.</li>
+              <li>Evitar código duplicado o innecesario.</li>
+            </ul>
+            Esto facilita la lectura del código tanto para ti como para otras personas que lo revisen.
+          </li>
+        </ul>
+      </section>
+      <section id="ContenidoExterno"> <!-- Más información -->
+        <h3>Para más información:</h3>
+        <ul>
+          <li><strong>Cursos online:</strong>
+            <ul>
+              <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3 School: Cursos y turoriales Programación WEB</a></li>
+              <li><a href="https://es.khanacademy.org/computing/computer-programming" target="_blank">Khan Academy: Programación de computadoras</a></li>
+              <li><a href="https://www.codecademy.com/catalog/language/html-css" target="_blank">Code Academy: Cursos gratuitos y de pago</a></li>
+            </ul>
+          </li>
+          <li><strong>Blogs y manuales de consulta:</strong>
+            <ul>
+              <li><a href="https://www.manualweb.net/html5/" target="_blank">Manual HTML5</a></li>              
+              <li><a href="https://isawnavarro.com/wp-content/uploads/2019/01/manual-Html5-css.pdf" target="_blank">Manual HTML en PDF para descargar</a></li>             
+            </ul>
+          </li>
+        </ul>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/XqFR2lqBYPs?si=i01QB6fA1VYo4v9M"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </section>
+    </div>
+  </div>
+</section>
